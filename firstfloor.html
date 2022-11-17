@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="floor">
+        <span class="blocked blocked1">BLOCKED1</span>
+        <span class="blocked blocked2">BLOCKED2</span>
+        <span class="blocked blocked3">BLOCKED3</span>
+        <span class="blocked blocked4">BLOCKED4</span>
+        <span class="blocked blocked5">BLOCKED4</span>
+        <span class="blocked blocked6"></span>
+        <span class="blocked blocked7"></span>
+        <span class="blocked blocked8"></span>
+        <span class="blocked blocked9"></span>
+        <span class="room room111">111</span>
+        <span class="room room113">113</span>
+        <span class="room room116">116</span>
+        <span class="room room117">117</span>
+        <span class="room room118">118</span>
+        <span class="room roomSR05">SR05</span>
+        <span class="room room127">127</span>
+        <span class="room room126">126</span>
+        <span class="room room121">121</span>
+        <span class="room room123">123</span>
+        <span class="room roomEDD">EDD LAB</span>
+        <span class="room roomFB">Faculty</span>
+        <span class="room roomESLAB">ESLAB</span>
+        <span class="room roomMML">MMLLAB</span>
+        <span class="room room133">133</span>
+        <span class="room roomDSP">DSPLAB</span>
+        <span class="room roomCSELAB">CSELAB</span>
+        <span class="room roomECELAB">ECELAB</span>
+        <span class="room room137">137</span>
+        <span class="room room139">139</span>
+        <span class="room roomCICR">CICR LAB</span>
+        <span class="room roomVSLI">VSLI LAB</span>
+        <span class="room room153">153</span>
+        <span class="room room148">148</span>
+        <span class="room roomCL3">CL3</span>
+        <span class="room roomENGLAB">ENG LAB</span>
+    </div>
+</body>
+</html>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.floor{
+    /* border: 20px solid yellow; */
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(220, 220, 220);
+}
+
+.room{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    border: 2px solid black;
+    background-color: red;
+}
+
+.blocked{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background-color: black;
+}
+
+.blocked1{
+    top: 300px;
+    left: 240px;
+    width: 268px;
+    height: 84px;
+}
+.blocked2{
+    top: 286px;
+    left: 940px;
+    width: 290px;
+    height: 95px;
+}
+.blocked3{
+    top: 420px;
+    left: 580px;
+    width: 260px;
+    height: 76px;
+}
+.blocked4{
+    top: 420px;
+    left: 1100px;
+    width: 130px;
+    height: 76px;
+}
+.blocked5{
+    top: 386px;
+    left: 1282px;
+    width: 100px;
+    height: 76px;
+}
+.blocked6{
+    top: 438px;
+    left: 1420px;
+    width: 50px;
+    height: 60px;
+}
+.blocked7{
+    top: 420px;
+    left: 260px;
+    width: 140px;
+    height: 76px;
+}
+.blocked8{
+    top: 420px;
+    left: 430px;
+    width: 78px;
+    height: 38px;
+}
+.blocked9{
+    top: 420px;
+    left: 75px;
+    width: 78px;
+    height: 38px;
+}
+
+.room111{
+    top: 300px;
+    left: 100px;
+    width: 84px;
+    height: 84px;
+}
+.room113{
+    top: 215px;
+    left: 100px;
+    width: 66px;
+    height: 82px;
+}
+.room116{
+    top: 130px;
+    left: 170px;
+    width: 66px;
+    height: 82px;
+}
+.room117{
+    top: 130px;
+    left: 240px;
+    width: 108px;
+    height: 82px; 
+}
+.room118{
+    top: 130px;
+    left: 400px;
+    width: 108px;
+    height: 82px; 
+}
+.roomSR05{
+    top: 130px;
+    left: 510px;
+    width: 108px;
+    height: 82px;
+}
+.room127{
+    top: 235px;
+    left: 240px;
+    width: 108px;
+    height: 62px;
+}
+.room126{
+    top: 235px;
+    left: 400px;
+    width: 108px;
+    height: 62px;
+}
+
+.room121{
+    top: 215px;
+    left: 560px;
+    width: 58px;
+    height: 82px;
+}
+.room123{
+    top: 300px;
+    left: 550px;
+    width: 68px;
+    height: 84px;
+    padding: 30px 20px;
+}
+.roomEDD{
+    top: 500px;
+    left: 500px;
+    width: 120px;
+    height: 82px;
+}
+.roomFB{
+    top: 500px;
+    left: 800px;
+    width: 120px;
+    height: 82px;
+}
+.roomESLAB{
+    top: 280px;
+    left: 800px;
+    width: 94px;
+    height: 102px;
+}
+.roomMML{
+    top: 205px;
+    left: 800px;
+    width: 94px;
+    height: 72px;
+}
+.room133{
+    top: 130px;
+    left: 800px;
+    width: 128px;
+    height: 72px;
+}
+.roomDSP{
+    top: 130px;
+    left: 930px;
+    width: 120px;
+    height: 72px;
+}
+.roomCSELAB{
+    top: 230px;
+    left: 940px;
+    width: 110px;
+    height: 52px;
+}
+.roomECELAB{
+    top: 230px;
+    left: 1120px;
+    width: 110px;
+    height: 52px;
+}
+.room137{
+    top: 130px;
+    left: 1120px;
+    width: 80px;
+    height: 72px;
+}
+.room139{
+    top: 130px;
+    left: 1202px;
+    width: 80px;
+    height: 72px;
+}
+.roomCICR{
+    top: 205px;
+    left: 1282px;
+    width: 80px;
+    height: 78px;
+}
+.roomVSLI{
+    top: 285px;
+    left: 1282px;
+    width: 80px;
+    height: 98px;
+}
+.room153{
+    top: 500px;
+    left: 1202px;
+    width: 100px;
+    height: 72px;
+}
+.room148{
+    top: 500px;
+    left: 1352px;
+    width: 100px;
+    height: 72px;
+}
+.roomCL3{
+    top: 575px;
+    left: 1202px;
+    width: 126px;
+    height: 84px;
+}
+.roomENGLAB{
+    top: 575px;
+    left: 1332px;
+    width: 120px;
+    height: 84px;
+}
+</style>
