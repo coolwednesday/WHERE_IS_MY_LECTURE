@@ -206,6 +206,8 @@ graph.addEdge("37", "40", 4);
 graph.addEdge("39", "37", 4);
 graph.addEdge("37", "26", 4);
 graph.addEdge("43", "46", 2);
+graph.addEdge("45", "38", 25);
+graph.addEdge("39", "34", 5);
 
 //Adding Nodes for First Floor
 graph.addVertex("101");
@@ -384,5 +386,4 @@ graph.addEdge("108", "33", 3);
 graph.addEdge("109", "43", 3);
 graph.addEdge("110", "20", 5);
 //Calling the Function to get the shortest path
-console.log(graph.Dijkstra("102", "244"));
-graph.display();
+console.log(graph.Dijkstra("46", "38"));
