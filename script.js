@@ -310,7 +310,7 @@ graph.addVertex("207");
 graph.addVertex("208");
 graph.addVertex("209");
 graph.addVertex("217");
-graph.addVertex("237");
+graph.addVertex("219");
 graph.addVertex("224");
 graph.addVertex("226");
 graph.addVertex("225");
@@ -335,8 +335,8 @@ graph.addVertex("259");
 
 //Adding Edges For Second Floor
 graph.addEdge("217", "203", 3);
-graph.addEdge("217", "237", 1);
-graph.addEdge("237", "224", 1);
+graph.addEdge("217", "219", 1);
+graph.addEdge("219", "224", 1);
 graph.addEdge("224", "226", 1);
 graph.addEdge("226", "225", 1);
 graph.addEdge("225", "229", 2);
