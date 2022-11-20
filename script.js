@@ -140,34 +140,43 @@ class WGraph {
 
 
 const graph = new WGraph();
-// Adding Nodes for First Floor
-graph.addVertex("20");
-graph.addVertex("21");
-graph.addVertex("22");
-graph.addVertex("23");
-graph.addVertex("24");
-graph.addVertex("25");
-graph.addVertex("26");
-graph.addVertex("41");
-graph.addVertex("35");
-graph.addVertex("31");
-graph.addVertex("27");
-graph.addVertex("28");
-graph.addVertex("29");
-graph.addVertex("30");
-graph.addVertex("32");
-graph.addVertex("33");
-graph.addVertex("34");
-graph.addVertex("36");
-graph.addVertex("37");
-graph.addVertex("38");
-graph.addVertex("39");
-graph.addVertex("40");
-graph.addVertex("42");
-graph.addVertex("43");
-graph.addVertex("44");
-graph.addVertex("45");
-graph.addVertex("46");
+// Adding Nodes for Ground Floor
+let ground = [20, 21, 22, 23, 24, 25, 26, 41, 35, 31, 27, 28, 29, 30, 32, 33, 34, 36, 37, 38, 39, 40, 42, 43, 44, 45, 46];
+
+let groundObj = { 20: 'stairs8', 21: 'rightWRG', 22: 'cafe', 23: 'oldcafe', 24: 'bcourt', 25: 'annapurna', 26: 'openspace', 41: 'phylab', 35: 'cl2', 31: 'cl1', 27: 'EMIlab', 28: 'stairs5', 29: 'temple', 30: 'leftWRG', 32: 'mph', 33: 'stairs6', 34: 'stairs9', 36: 'smallGate', 37: 'entry', 38: 'workshop', 39: 'admin', 40: 'LRC', 42: 'innovation', 43: 'stairs7', 44: 'ground', 45: 'basement', 46: 'OAT' }
+
+// console.log(groundObj[ground[0]]);
+
+for (let i = 0; i < ground.length; i++){
+    graph.addVertex(ground[i]);
+}
+// graph.addVertex("20");
+// graph.addVertex("21");
+// graph.addVertex("22");
+// graph.addVertex("23");
+// graph.addVertex("24");
+// graph.addVertex("25");
+// graph.addVertex("26");
+// graph.addVertex("41");
+// graph.addVertex("35");
+// graph.addVertex("31");
+// graph.addVertex("27");
+// graph.addVertex("28");
+// graph.addVertex("29");
+// graph.addVertex("30");
+// graph.addVertex("32");
+// graph.addVertex("33");
+// graph.addVertex("34");
+// graph.addVertex("36");
+// graph.addVertex("37");
+// graph.addVertex("38");
+// graph.addVertex("39");
+// graph.addVertex("40");
+// graph.addVertex("42");
+// graph.addVertex("43");
+// graph.addVertex("44");
+// graph.addVertex("45");
+// graph.addVertex("46");
 
 //Adding edges for Ground Floor
 graph.addEdge("20", "21", 1);
@@ -210,45 +219,51 @@ graph.addEdge("45", "38", 25);
 graph.addEdge("39", "34", 5);
 
 //Adding Nodes for First Floor
-graph.addVertex("101");
-graph.addVertex("102");
-graph.addVertex("103");
-graph.addVertex("104");
-graph.addVertex("105");
-graph.addVertex("106");
-graph.addVertex("107");
-graph.addVertex("108");
-graph.addVertex("109");
-graph.addVertex("110");
-graph.addVertex("111");
-graph.addVertex("131");
-graph.addVertex("124");
-graph.addVertex("112");
-graph.addVertex("113");
-graph.addVertex("116");
-graph.addVertex("117");
-graph.addVertex("127");
-graph.addVertex("126");
-graph.addVertex("118");
-graph.addVertex("125");
-graph.addVertex("123");
-graph.addVertex("133");
-graph.addVertex("132");
-graph.addVertex("130");
-graph.addVertex("134");
-graph.addVertex("137");
-graph.addVertex("158");
-graph.addVertex("157");
-graph.addVertex("121");
-graph.addVertex("138");
-graph.addVertex("140");
-graph.addVertex("142");
-graph.addVertex("148");
-graph.addVertex("151");
-graph.addVertex("150");
-graph.addVertex("153");
-graph.addVertex("154");
-graph.addVertex("128");
+let first = [101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 131, 124, 112, 113, 116, 117, 127, 126, 118, 125, 123, 133, 132, 130, 134, 137, 158, 157, 121, 138, 140, 142, 148, 151, 150, 153, 154, 128]
+
+for (let i = 0; i < first.length; i++){
+    graph.addVertex(first[i]);
+}
+
+// graph.addVertex("101");
+// graph.addVertex("102");
+// graph.addVertex("103");
+// graph.addVertex("104");
+// graph.addVertex("105");
+// graph.addVertex("106");
+// graph.addVertex("107");
+// graph.addVertex("108");
+// graph.addVertex("109");
+// graph.addVertex("110");
+// graph.addVertex("111");
+// graph.addVertex("131");
+// graph.addVertex("124");
+// graph.addVertex("112");
+// graph.addVertex("113");
+// graph.addVertex("116");
+// graph.addVertex("117");
+// graph.addVertex("127");
+// graph.addVertex("126");
+// graph.addVertex("118");
+// graph.addVertex("125");
+// graph.addVertex("123");
+// graph.addVertex("133");
+// graph.addVertex("132");
+// graph.addVertex("130");
+// graph.addVertex("134");
+// graph.addVertex("137");
+// graph.addVertex("158");
+// graph.addVertex("157");
+// graph.addVertex("121");
+// graph.addVertex("138");
+// graph.addVertex("140");
+// graph.addVertex("142");
+// graph.addVertex("148");
+// graph.addVertex("151");
+// graph.addVertex("150");
+// graph.addVertex("153");
+// graph.addVertex("154");
+// graph.addVertex("128");
 
 //Adding edges for First Floor
 graph.addEdge("111", "113", 1);
@@ -302,38 +317,43 @@ graph.addEdge("128", "108", 1);
 graph.addEdge("124", "128", 1);
 
 //Adding nodes for Second Floor
-graph.addVertex("201");
-graph.addVertex("202");
-graph.addVertex("203");
-graph.addVertex("204");
-graph.addVertex("205");
-graph.addVertex("206");
-graph.addVertex("207");
-graph.addVertex("208");
-graph.addVertex("209");
-graph.addVertex("217");
-graph.addVertex("219");
-graph.addVertex("224");
-graph.addVertex("226");
-graph.addVertex("225");
-graph.addVertex("228");
-graph.addVertex("229");
-graph.addVertex("230");
-graph.addVertex("234");
-graph.addVertex("237");
-graph.addVertex("238");
-graph.addVertex("240");
-graph.addVertex("241");
-graph.addVertex("242");
-graph.addVertex("243");
-graph.addVertex("244");
-graph.addVertex("246");
-graph.addVertex("263");
-graph.addVertex("264");
-graph.addVertex("254");
-graph.addVertex("255");
-graph.addVertex("257");
-graph.addVertex("259");
+let second = [201, 202, 203, 204, 205, 206, 207, 208, 209, 217, 219, 224, 225, 226, 228, 229, 230, 234, 237, 238, 241, 240, 242, 243, 264, 263, 244, 246, 254, 259, 255, 257]
+
+for (let i = 0; i < second.length; i++){
+    graph.addVertex(second[i]);
+}
+// graph.addVertex("201");
+// graph.addVertex("202");
+// graph.addVertex("203");
+// graph.addVertex("204");
+// graph.addVertex("205");
+// graph.addVertex("206");
+// graph.addVertex("207");
+// graph.addVertex("208");
+// graph.addVertex("209");
+// graph.addVertex("217");
+// graph.addVertex("219");
+// graph.addVertex("224");
+// graph.addVertex("226");
+// graph.addVertex("225");
+// graph.addVertex("228");
+// graph.addVertex("229");
+// graph.addVertex("230");
+// graph.addVertex("234");
+// graph.addVertex("237");
+// graph.addVertex("238");
+// graph.addVertex("240");
+// graph.addVertex("241");
+// graph.addVertex("242");
+// graph.addVertex("243");
+// graph.addVertex("244");
+// graph.addVertex("246");
+// graph.addVertex("263");
+// graph.addVertex("264");
+// graph.addVertex("254");
+// graph.addVertex("255");
+// graph.addVertex("257");
+// graph.addVertex("259");
 
 //Adding Edges For Second Floor
 graph.addEdge("217", "203", 3);
@@ -386,6 +406,8 @@ graph.addEdge("108", "33", 3);
 graph.addEdge("109", "43", 3);
 graph.addEdge("110", "20", 5);
 
+// console.log(graph.Dijkstra("117", "226"));
+
 
 let result = document.getElementById('searchBtn');
 result.addEventListener('click', showPath);
@@ -410,12 +432,16 @@ function showPath() {
 
 function displayPath(path) {
     let pathContainer = document.getElementById('path');
-    console.log(pathContainer);
     for (let i = 0; i < path.length; i++) {
         let pathElement = document.createElement('div');
         pathElement.textContent = path[i];
         pathElement.className = 'pathElement';
         pathContainer?.append(pathElement);
+    }
+
+    for (let i = 0; i < path.length; i++){
+        let room = document.getElementById(`${groundObj[path[i]]}`);
+        room.style.background = 'pink';
     }
 }
 
@@ -428,9 +454,10 @@ function goBack() {
 
     home.classList.remove('none');
     display.classList.add('none');
-
 }
 
-
-
-
+function showOnMap() {
+    let map = document.getElementById('groundFloor');
+    map.classList.remove('none');
+    
+}

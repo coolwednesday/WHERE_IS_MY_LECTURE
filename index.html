@@ -7,6 +7,7 @@
     <title>Welcome to JIIT - Route/Classroom Finder</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="groundFloor.css">
 </head>
 <body>
     <div class="hero">
@@ -40,13 +41,88 @@
     </div>
 
     <div class="display none">
-        <div id="path" class="path">
-            Your Path is :
+        <div class="buttons">
+            <div id="path" class="path">
+                Your Path is :
+            </div>
+            
+            <div class="anotherButton">
+                <button type="button" onclick="goBack()">Find Another Route</button>
+            </div>
+            
+            <div class="anotherButton">
+                <button type="button" onclick="showOnMap()">Show on Map</button>
+            </div>
         </div>
 
-        <div class="anotherButton">
-            <button type="button" onclick="goBack()">Find Another Route</button>
-        </div>
+        <div id="groundFloor" class="groundFloor none">
+			<div id="basement" class="ground ground52">Basement</div>
+			<div id="workshop" class="ground ground50">Workshop Lab</div>
+			<div id="ground" class="ground ground19">Ground</div>
+			<div id="ground37" class="ground ground37"></div>
+			<div id="cl1" class="ground ground22">CL1</div>
+			<div id="EMIlab" class="ground ground32">EMI Lab</div>
+			<div id="annapurna" class="ground ground9">Annapurna</div>
+			<div id="ground10" class="ground ground10"></div>
+			<div id="cafe" class="ground ground12">Cafe</div>
+			<div id="stairs9" class="ground ground13">9</div>
+			<div id="LRC" class="ground ground14">LRC</div>
+			<div id="admin" class="ground ground15">Admin Department</div>
+			<div id="phylab" class="ground ground17">Physics Lab</div>
+			<div id="ground24" class="ground ground24"></div>
+			<div id="bcourt" class="ground ground26">Badminton Court</div>
+			<div id="ground27" class="ground ground27">10</div>
+			<div id="OAT" class="ground ground28">O.A.T.</div>
+			<div id="innovation" class="ground ground29">Innovation Hub</div>
+			<div id="leftWRG" class="ground ground322">Left Washroom</div>
+			<div id="rightWRG" class="ground ground33">Right Washroom</div>
+			<div id="cl2" class="ground ground36">CL2</div>
+			<div id="line3" class="line line3"></div>
+			<div id="line7" class="line line7"></div>
+			<div id="line18" class="line line18"></div>
+			<div id="line22" class="line line22"></div>
+			<div id="line26" class="line line26"></div>
+			<div id="line28" class="line line28"></div>
+			<!-- <div id="line29" class="line line29"></div> -->
+
+            
+			<div id="ground39" class="ground ground39">7</div>
+			<div id="openspace" class="ground ground51">Open Space</div>
+			<div id="line39" class="line line39"></div>
+			<div id="stairs8" class="ground ground42">8</div>
+			<div id="stairs5" class="ground ground45">5</div>
+			<div id="mph" class="ground ground46">Multi Purpose Hall</div>
+			<div id="line42" class="line line42"></div>
+			<div id="line43" class="line line43"></div>
+			<div id="line44" class="line line44"></div>
+			<div id="line45" class="line line45"></div>
+			<div id="line46" class="line line46"></div>
+			<div id="line47" class="line line47"></div>
+			<div id="line48" class="line line48"></div>
+			<div id="line49" class="line line49"></div>
+			<div id="line50" class="line line50"></div>
+			<div id="line51" class="line line51"></div>
+			<div id="line52" class="line line52"></div>
+			<div id="line53" class="line line53"></div>
+			<div id="line54" class="line line54"></div>
+			<div id="line55" class="line line55"></div>
+			<div id="line56" class="line line56"></div>
+			<div id="line58" class="line line58"></div>
+			<div id="line59" class="line line59"></div>
+			<div id="line60" class="line line60"></div>
+			<div id="line61" class="line line61"></div>
+			<div id="line62" class="line line62"></div>
+			<div id="line63" class="line line63"></div>
+			<div id="line64" class="line line64"></div>
+			<div id="stairs6" class="ground ground47">6</div>
+			<div id="smallGate" class="ground ground48">Gate</div>
+			<div id="temple" class="ground ground49">Temple</div>
+			<div id="line57" class="line line57"></div>
+			<div id="line65" class="line line65"></div>
+			<div id="line66" class="line line66"></div>
+			<div id="line67" class="line line67"></div>
+			<div id="oldcafe" class="ground ground61">Old Cafe</div>
+		</div>
     </div>
 
     <script src="index.js"></script>
