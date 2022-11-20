@@ -180,43 +180,43 @@ for (let i = 0; i < ground.length; i++){
 
 //Adding edges for Ground Floor
 graph.addEdge("20", "21", 1);
-graph.addEdge("21", "22", 4);
+graph.addEdge("21", "22", 2);
 graph.addEdge("22", "24", 1);
-graph.addEdge("24", "25", 4);
-graph.addEdge("25", "26", 4);
-graph.addEdge("25", "41", 8);
+graph.addEdge("24", "25", 3);
+graph.addEdge("25", "26", 2);
+graph.addEdge("26", "41", 6);
 graph.addEdge("41", "35", 1);
-graph.addEdge("31", "35", 4);
-graph.addEdge("27", "31", 6);
-graph.addEdge("27", "28", 4);
+graph.addEdge("31", "35", 2);
+graph.addEdge("27", "31", 3);
+graph.addEdge("27", "28", 1);
 graph.addEdge("29", "28", 1);
 graph.addEdge("30", "29", 2);
 graph.addEdge("32", "30", 2);
-graph.addEdge("32", "33", 2);
-graph.addEdge("34", "32", 4);
+graph.addEdge("32", "33", 1);
+graph.addEdge("34", "32", 2);
 graph.addEdge("38", "34", 3);
 graph.addEdge("34", "36", 1);
-graph.addEdge("33", "34", 2);
-graph.addEdge("33", "39", 6);
-graph.addEdge("40", "43", 4);
-graph.addEdge("42", "43", 3);
-graph.addEdge("23", "42", 3);
+graph.addEdge("33", "34", 1);
+graph.addEdge("33", "39", 5);
+graph.addEdge("40", "43", 2);
+graph.addEdge("42", "43", 2);
+graph.addEdge("23", "42", 2);
 graph.addEdge("20", "23", 2);
 graph.addEdge("29", "32", 1);
 graph.addEdge("36", "39", 4);
-graph.addEdge("32", "31", 7);
-graph.addEdge("39", "41", 8);
-graph.addEdge("26", "44", 8);
-graph.addEdge("40", "25", 4);
-graph.addEdge("24", "43", 4);
-graph.addEdge("22", "42", 5);
+// graph.addEdge("32", "31", 7);
+graph.addEdge("39", "41", 3);
+graph.addEdge("26", "44", 2);
+graph.addEdge("40", "25", 2);
+graph.addEdge("24", "43", 2);
+graph.addEdge("22", "42", 2);
 graph.addEdge("45", "46", 3);
 graph.addEdge("37", "40", 4);
 graph.addEdge("39", "37", 4);
-graph.addEdge("37", "26", 4);
-graph.addEdge("43", "46", 2);
-graph.addEdge("45", "38", 25);
-graph.addEdge("39", "34", 5);
+graph.addEdge("37", "26", 2);
+// graph.addEdge("43", "46", 2);
+graph.addEdge("45", "38", 8);
+// graph.addEdge("39", "34", 5);
 
 //Adding Nodes for First Floor
 let first = [101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 131, 124, 112, 113, 116, 117, 127, 126, 118, 125, 123, 133, 132, 130, 134, 137, 158, 157, 121, 138, 140, 142, 148, 151, 150, 153, 154, 128]
@@ -434,30 +434,36 @@ function displayPath(path) {
     let pathContainer = document.getElementById('path');
     for (let i = 0; i < path.length; i++) {
         let pathElement = document.createElement('div');
-        pathElement.textContent = path[i];
+        pathElement.textContent = groundObj[path[i]];
         pathElement.className = 'pathElement';
         pathContainer?.append(pathElement);
     }
 
     for (let i = 0; i < path.length; i++){
+        console.log(groundObj[path[i]]);
         let room = document.getElementById(`${groundObj[path[i]]}`);
         room.style.background = 'pink';
     }
 }
 
 function goBack() {
-    let path = document.getElementById('path');
-    path.innerHTML = 'Your Path is : ';
+    window.location.reload();
+    // let path = document.getElementById('path');
+    // path.innerHTML = 'Your Path is : ';
 
-    let home = document.querySelector('.home');
-    let display = document.querySelector('.display');
+    // let home = document.querySelector('.home');
+    // let display = document.querySelector('.display');
 
-    home.classList.remove('none');
-    display.classList.add('none');
+    // home.classList.remove('none');
+    // display.classList.add('none');
 }
 
-function showOnMap() {
+function showOnMap(type = 'close') {
     let map = document.getElementById('groundFloor');
-    map.classList.remove('none');
+    if (type == 'open') {
+        map.classList.remove('none');
+    } else {
+        map.classList.add('none');
+    }
     
 }

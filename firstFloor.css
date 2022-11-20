@@ -19,10 +19,20 @@
 .rectangle2 {
 	background-color: #8153bc;
 	height: 36px;
-	width: 78px;
+	width: 71px;
 	border: 2px solid #000000;
 	top: 233px;
-	left: 308px;
+	left: 317px;
+	position: absolute;
+}
+
+.rectangle3 {
+	background-color: #8153bc;
+	height: 76px;
+	width: 44px;
+	border: 2px solid #000000;
+	top: 334px;
+	left: 237px;
 	position: absolute;
 }
 
@@ -39,16 +49,16 @@
 .rectangle4 {
 	background-color: #8153bc;
 	height: 80px;
-	width: 51px;
+	width: 44px;
 	border: 2px solid #000000;
 	top: 413px;
-	left: 230px;
+	left: 237px;
 	position: absolute;
 }
 
 .rectangle5 {
 	background-color: #554f4f;
-	height: 66px;
+	height: 73px;
 	width: 51px;
 	border: 2px solid #000000;
 	top: 259px;
@@ -159,10 +169,10 @@
 
 .rectangle16 {
 	background-color: #b4a2fa;
-	height: 117px;
+	height: 107px;
 	width: 48px;
 	border: 2px solid #000000;
-	top: 313px;
+	top: 322px;
 	left: 540px;
 	position: absolute;
 }
@@ -338,7 +348,7 @@
 }
 
 .rectangle34 {
-    background-color: #6b4bc6;
+	background-color: #6b4bc6;
 	height: 28px;
 	width: 84px;
 	border: 2px solid #000000;
@@ -348,7 +358,7 @@
 }
 
 .rectangle35 {
-    background-color: #6b4bc6;
+	background-color: #6b4bc6;
 	height: 91.00000762939453px;
 	width: 27.000001907348633px;
 	transform: rotate(90deg);
@@ -359,13 +369,13 @@
 }
 
 .rectangle36 {
-    background-color: #b4a2fa;
-    height: 36px;
-    width: 85px;
-    border: 2px solid #000000;
-    top: 233px;
-    left: 230px;
-    position: absolute;
+	background-color: #b4a2fa;
+	height: 36px;
+	width: 77px;
+	border: 2px solid #000000;
+	top: 233px;
+	left: 237px;
+	position: absolute;
 }
 
 .rectangle46 {
@@ -764,15 +774,6 @@
 	position: absolute;
 }
 
-.rectangle16 {
-	background-color: #b4a2fa;
-	height: 117px;
-	width: 48px;
-	border: 2px solid #000000;
-	top: 312px;
-	left: 540px;
-	position: absolute;
-}
 
 .line17 {
 	width: 54px;
