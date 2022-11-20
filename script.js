@@ -143,6 +143,31 @@ const graph = new WGraph();
 // Adding Nodes for Ground Floor
 let ground = [20, 21, 22, 23, 24, 25, 26, 41, 35, 31, 27, 28, 29, 30, 32, 33, 34, 36, 37, 38, 39, 40, 42, 43, 44, 45, 46];
 
+let array = [
+    'Ground-Floor-Stairs-8', 'Ground-Floor-Right-Washroom', 'Cafe', 'Old-Cafe', 'Badminton-Court',
+    'Annapurna', 'Open-Space', 'Physics-Lab', 'CL-2', 'Cl-1', 'EMI-Lab', 'Ground-Floor-Stairs-5', 'Temple', 'Ground-Floor-Left-Washroom', 'Multi-Purpose-Hall', 'Ground-Floor-Stairs-6',
+    'Ground-Floor-Stairs-9', 'Small-Gate', 'Entry', 'Workshop-Lab', 'Admin', 'LRC',
+    'Innovation-Hub', 'Ground-Floor-Stairs-7', 'Ground', 'Basement', 'Ground-Floor-Stairs-10',
+    'O.A.T.',
+
+    'First-Floor-Left-Washroom', 'First-Floor-Right-Washroom', 'First-Floor-Stairs-1',
+    'First-Floor-Stairs-2', 'First-Floor-Stairs-3', 'First-Floor-Stairs-4', 'First-Floor-Stairs-5',
+    'First-Floor-Stairs-6', 'First-Floor-Stairs-7', 'First-Floor-Stairs-8', '111', 'CR-1',
+    'Faculty-Block-ECE', 'EDD-Drawing-Hall', 'M.P.H-First-Floor', '113', 'CR-2', '116', 'T1', '117', 'LT-2', '127', 'T2', '126', 'T3', '118', 'LT1', 'SR-05', '123', 'CR-7', '133', 'Communication-Lab', '132', 'M.M.L. Lab', '130',
+    'Basic-Electronics-Lab', '134', 'DSP Lab', '137', 'CR-8', '158', 'Project-Lab-CSE',
+    '157', 'Project-Lab-ECE', '121', 'T4', '138', 'CR-9', '140', 'CICR-Lab', '142', 'VLSI-Project-Lab', '148', 'CR-44', '151', 'CL-4', '150', 'CR-59', '153',
+    'CR-45', '154', 'CR-60', 'CL-3', 'Server-Room',
+
+    'Second-Floor-Left-Washroom', 'Second-Floor-Right-Washroom', 'Second-Floor-Stairs-1',
+    'Second-Floor-Stairs-2', 'Second-Floor-Stairs-3', 'Second-Floor-Stairs-4', 'Faculty-Block-CSE',
+    'Faculty-Block-Other-Subjects', 'HSS-Faculty-Block', '217', 'CR-3', '219', 'Humanities-Lab', 'Analog-to-Digital-Lab', '224', 'T5', '225', 'CR-4', '226', 'CR-5', '228',
+    'T6', '229', 'CR-6', '230', 'T8', '234', 'Electromagnetics-Lab', '237',
+    'Microcontrollers-Lab', '238', 'CR-53', '241', 'Mobile-Technology-Lab', '240', 'CR-54', '242', 'CR-46', '243', 'P-&-D-Computing-Lab', '264', 'Information-Security-Lab',
+    '263', 'SR-06', 'LT-9', '244', 'TR-09', '246', 'LT-3', '254', 'LT-4',
+    '259', 'LT5', '255', 'LT-6', '257'
+];
+
+
 let groundObj = {
     20: 'Stairs-8', 21: 'Ground-Floor-Right-Washroom', 22: 'Cafe', 23: 'Old-Cafe', 24: 'Badminton-Court', 25: 'Annapurna', 26: 'Open-Space', 41: 'Physics-Lab', 35: 'CL-2', 31: 'Cl-1', 27: 'EMI-Lab', 28: 'Stairs-5', 29: 'Temple', 30: 'Ground-Floor-Left-Washroom', 32: 'Multi-Purpose-Hall', 33: 'Stairs-6', 34: 'Stairs-9', 36: 'Small-Gate', 37: 'Entry', 38: 'Workshop-Lab', 39: 'Admin', 40: 'LRC', 42: 'Innovation-Hub', 43: 'Stairs-7', 44: 'Ground', 45: 'Basement', 46: 'Stairs-10',
     47: 'O.A.T.',
@@ -444,12 +469,44 @@ function showPath() {
     display.classList.remove('none');
 }
 
-
+/*
+function getobj(p) {
+    let a = '';
+    for (let i = 0; i < array.length; i++) {
+        if (roomObj[array[i]] == p) {
+            a = a.concat(array[i]);
+            a=a.concat('/');
+        }
+    }
+    console.log(a);
+    return a;
+}
+*/
+function getobj(p) {
+    let a = '';
+    let j = 0;
+    for (let i = 0; i < array.length; i++) {
+        if (roomObj[array[i]] == p) {
+            if (j == 0) {
+                a = a.concat(array[i]);
+                j++;
+            } else {
+                a = a.concat('/');
+                a = a.concat(array[i]);
+                j++;
+            }
+        }
+    }
+        console.log(a);
+        return a;
+    }
+    
 function displayPath(path) {
     let pathContainer = document.getElementById('path');
     for (let i = 0; i < path.length; i++) {
         let pathElement = document.createElement('div');
-        pathElement.textContent = groundObj[path[i]];
+        let a = getobj(path[i]);
+        pathElement.textContent = a;
         pathElement.className = 'pathElement';
         pathContainer?.append(pathElement);
     }
