@@ -1,8 +1,12 @@
-.desktop {
+.secondFloor {
 	position: relative;
-	width: 1440px;
-	height: 1024px;
-	background: #ffffff;
+	background-color: #ffffff;
+	height: 700px;
+	width: 1480px;
+	padding: 0px;
+    border: 10px solid black;
+	text-align: center;
+	padding-top: 20px;
 }
 .room {
     display: flex;
@@ -276,174 +280,174 @@
 }
 
 
-.line {
+.sline {
 	position: absolute;
 	border-top: 2px solid #000000;
 }
-.line1 {
+.sline1 {
 	width: 130px;
 	height: 0px;
 	left: 38px;
 	top: 510px;
 	transform: rotate(90deg);
 }
-.line2 {
+.sline2 {
 	width: 52px;
 	height: 0px;
 	left: 231.5px;
 	top: 517px;
 	transform: rotate(180deg);
 }
-.line3 {
+.sline3 {
 	width: 60px;
 	height: 0px;
 	left: 314px;
 	top: 547px;
 	transform: rotate(90deg);
 }
-.line4 {
+.sline4 {
 	width: 22px;
 	height: 0px;
 	left: 237px;
 	top: 443px;
 	transform: rotate(90deg);
 }
-.line5 {
+.sline5 {
 	width: 22px;
 	height: 0px;
 	left: 252px;
 	top: 443px;
 	transform: rotate(90deg);
 }
-.line6 {
+.sline6 {
 	width: 22px;
 	height: 0px;
 	left: 266px;
 	top: 443px;
 	transform: rotate(90deg);
 }
-.line7 {
+.sline7 {
 	width: 22px;
 	height: 0px;
 	left: 306px;
 	top: 443px;
 	transform: rotate(90deg);
 }
-.line8 {
+.sline8 {
 	width: 22px;
 	height: 0px;
 	left: 320px;
 	top: 443px;
 	transform: rotate(90deg);
 }
-.line9 {
+.sline9 {
 	width: 22px;
 	height: 0px;
 	left: 292px;
 	top: 443px;
 	transform: rotate(90deg);
 }
-.line10 {
+.sline10 {
 	width: 277px;
 	height: 0px;
 	left: 206px;
 	top: 381px;
 	transform: rotate(90.21deg);
 }
-.line11 {
+.sline11 {
 	width: 113px;
 	height: 0px;
 	left: 588px;
 	top: 328px;
 	transform: rotate(-0.52deg);
 }
-.line12 {
+.sline12 {
 	width: 319px;
 	height: 0px;
 	left: 462px;
 	top: 410px;
 }
-.line13 {
+.sline13 {
 	width: 86px;
 	height: 0px;
 	left: 741.5px;
 	top: 367px;
 	transform: rotate(90deg);
 }
-.line14 {
+.sline14 {
 	width: 44px;
 	height: 0px;
 	left: 1053.5px;
 	top: 346px;
 	transform: rotate(90deg);
 }
-.line15 {
+.sline15 {
 	width: 146px;
 	height: 0px;
 	left: 1075px;
 	top: 368px;
 }
-.line16 {
+.sline16 {
 	width: 58px;
 	height: 0px;
 	left: 1191px;
 	top: 338px;
 	transform: rotate(-90.01deg);
 }
-.line17 {
+.sline17 {
 	width: 62px;
 	height: 0px;
 	left: 201px;
 	top: 486px;
 	transform: rotate(-90deg);
 }
-.line18 {
+.sline18 {
 	width: 80.01px;
 	height: 0px;
 	left: 443px;
 	top: 370px;
 	transform: rotate(89.28deg);
 }
-.line19 {
+.sline19 {
 	width: 124px;
 	height: 0px;
 	left: 220px;
 	top: 456px;
 	transform: rotate(90deg);
 }
-.line20 {
+.sline20 {
 	width: 99px;
 	height: 0px;
 	left: 940px;
 	top: 373px;
 	transform: rotate(90deg);
 }
-.line21 {
+.sline21 {
 	width: 89px;
 	height: 0px;
 	left: 990px;
 	top: 422px;
 }
-.line22 {
+.sline22 {
 	width: 360px;
 	height: 0px;
 	left: 102px;
 	top: 577px;
 }
-.line24 {
+.sline24 {
 	width: 278px;
 	height: 1.04px;
 	left: 800.5px;
 	top: 576px;
 	transform: rotate(0.21deg);
 }
-.line25 {
+.sline25 {
 	width: 41px;
 	height: 0px;
 	left: 1159px;
 	top: 577px;
 }
-.line26 {
+.sline26 {
 	width: 1.41px;
 	height: 0px;
 	left: 587px;
@@ -452,131 +456,131 @@
 	border-top: 1px solid #000000;
 	transform: rotate(-45deg);
 }
-.line27 {
+.sline27 {
 	width: 297px;
 	height: 0px;
 	left: 1077px;
 	top: 131px;
 }
-.line28 {
+.sline28 {
 	width: 27px;
 	height: 0px;
 	left: 1360px;
 	top: 325px;
 	transform: rotate(90deg);
 }
-.line29 {
+.sline29 {
 	width: 212.01px;
 	height: 0px;
 	left: 1266.95px;
 	top: 471px;
 	transform: rotate(90.53deg);
 }
-.line30 {
+.sline30 {
 	width: 93px;
 	height: 0px;
 	left: 1280px;
 	top: 577px;
 }
-.line31 {
+.sline31 {
 	width: 56px;
 	height: 0px;
 	left: 1264.5px;
 	top: 392px;
 	transform: rotate(90deg);
 }
-.line32 {
+.sline32 {
 	width: 14px;
 	height: 0px;
 	left: 1280px;
 	top: 420px;
 	transform: rotate(180deg);
 }
-.line33 {
+.sline33 {
 	width: 107px;
 	height: 0px;
 	left: 1321px;
 	top: 184px;
 	transform: rotate(-90deg);
 }
-.line34 {
+.sline34 {
 	width: 25px;
 	height: 0px;
 	left: 1320px;
 	top: 351px;
 	transform: rotate(90deg);
 }
-.line45 {
+.sline45 {
 	width: 25px;
 	height: 0px;
 	left: 1340px;
 	top: 351px;
 	transform: rotate(90deg);
 }
-.line35 {
+.sline35 {
 	width: 25px;
 	height: 0px;
 	left: 1300px;
 	top: 351px;
 	transform: rotate(90deg);
 }
-.line36 {
+.sline36 {
 	width: 22px;
 	height: 0px;
 	left: 850px;
 	top: 342px;
 	transform: rotate(90deg);
 }
-.line37 {
+.sline37 {
 	width: 22px;
 	height: 0px;
 	left: 830px;
 	top: 342px;
 	transform: rotate(90deg);
 }
-.line38 {
+.sline38 {
 	width: 22px;
 	height: 0px;
 	left: 810px;
 	top: 342px;
 	transform: rotate(90deg);
 }
-.line39 {
+.sline39 {
 	width: 22px;
 	height: 0px;
 	left: 793px;
 	top: 342px;
 	transform: rotate(90deg);
 }
-.line40 {
+.sline40 {
 	width: 31px;
 	height: 0px;
 	left: 453px;
 	top: 316px;
 	transform: rotate(90deg);
 }
-.line41 {
+.sline41 {
 	width: 31px;
 	height: 0px;
 	left: 438px;
 	top: 316px;
 	transform: rotate(90deg);
 }
-.line42 {
+.sline42 {
 	width: 31px;
 	height: 0px;
 	left: 424px;
 	top: 315px;
 	transform: rotate(90deg);
 }
-.line43 {
+.sline43 {
 	width: 31px;
 	height: 0px;
 	left: 407px;
 	top: 316px;
 	transform: rotate(90deg);
 }
-.line44 {
+.sline44 {
 	width: 31px;
 	height: 0px;
 	left: 392px;
