@@ -317,7 +317,7 @@ graph.addEdge("F128", "F108", 1);
 graph.addEdge("F124", "F128", 1);
 
 //Adding nodes for Second Floor
-let second = [201, 202, 203, 204, 205, 206, 207, 208, 209, 217, 219, 224, 225, 226, 228, 229, 230, 234, 237, 238, 241, 240, 242, 243, 264, 263, 244, 246, 254, 259, 255, 257]
+let second = [S201, S202, S203, S204, S205, S206, S207, S208, S209, S217, S219, S224, S225, S226, S228, S229, S230, S234, S237, S238, S241, S240, S242, S243, S264, S263, S244, S246, S254, S259, S255, S257]
 
 for (let i = 0; i < second.length; i++) {
     graph.addVertex(second[i]);
@@ -356,43 +356,43 @@ for (let i = 0; i < second.length; i++) {
 // graph.addVertex("259");
 
 //Adding Edges For Second Floor
-graph.addEdge("217", "203", 3);
-graph.addEdge("217", "219", 1);
-graph.addEdge("219", "224", 1);
-graph.addEdge("224", "226", 1);
-graph.addEdge("226", "225", 1);
-graph.addEdge("225", "229", 2);
-graph.addEdge("226", "228", 2);
-graph.addEdge("228", "229", 1);
-graph.addEdge("230", "228", 1);
-graph.addEdge("230", "234", 1);
-graph.addEdge("234", "237", 1);
-graph.addEdge("204", "237", 1);
-graph.addEdge("207", "237", 2);
-graph.addEdge("207", "204", 2);
-graph.addEdge("207", "208", 7);
-graph.addEdge("205", "208", 2);
-graph.addEdge("205", "238", 1);
-graph.addEdge("240", "238", 1);
-graph.addEdge("240", "241", 1);
-graph.addEdge("242", "241", 1);
-graph.addEdge("243", "242", 1);
-graph.addEdge("264", "242", 1);
-graph.addEdge("243", "263", 1);
-graph.addEdge("264", "263", 1);
-graph.addEdge("244", "243", 1);
-graph.addEdge("246", "244", 1);
-graph.addEdge("246", "237", 1);
-graph.addEdge("237", "259", 3);
-graph.addEdge("237", "254", 3);
-graph.addEdge("259", "254", 1);
-graph.addEdge("259", "257", 1);
-graph.addEdge("257", "255", 1);
-graph.addEdge("254", "255", 1);
-graph.addEdge("202", "259", 3);
-graph.addEdge("202", "254", 3);
-graph.addEdge("202", "206", 2);
-graph.addEdge("217", "201", 4);
+graph.addEdge("S217", "S203", 3);
+graph.addEdge("S217", "S219", 1);
+graph.addEdge("S219", "S224", 1);
+graph.addEdge("S224", "S226", 1);
+graph.addEdge("S226", "S225", 1);
+graph.addEdge("S225", "S229", 2);
+graph.addEdge("S226", "S228", 2);
+graph.addEdge("S228", "S229", 1);
+graph.addEdge("S230", "S228", 1);
+graph.addEdge("S230", "S234", 1);
+graph.addEdge("S234", "S237", 1);
+graph.addEdge("S204", "S237", 1);
+graph.addEdge("S207", "S237", 2);
+graph.addEdge("S207", "S204", 2);
+graph.addEdge("S207", "S208", 7);
+graph.addEdge("S205", "S208", 2);
+graph.addEdge("S205", "S238", 1);
+graph.addEdge("S240", "S238", 1);
+graph.addEdge("S240", "S241", 1);
+graph.addEdge("S242", "S241", 1);
+graph.addEdge("S243", "S242", 1);
+graph.addEdge("S264", "S242", 1);
+graph.addEdge("S243", "S263", 1);
+graph.addEdge("S264", "S263", 1);
+graph.addEdge("S244", "S243", 1);
+graph.addEdge("S246", "S244", 1);
+graph.addEdge("S246", "S237", 1);
+graph.addEdge("S237", "S259", 3);
+graph.addEdge("S237", "S254", 3);
+graph.addEdge("S259", "S254", 1);
+graph.addEdge("S259", "S257", 1);
+graph.addEdge("S257", "S255", 1);
+graph.addEdge("S254", "S255", 1);
+graph.addEdge("S202", "S259", 3);
+graph.addEdge("S202", "S254", 3);
+graph.addEdge("S202", "S206", 2);
+graph.addEdge("S217", "S201", 4);
 
 //Adding edges betwwen stairs to connect all the floors
 //Connecting 2nd and 1st floor
