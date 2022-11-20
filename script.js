@@ -143,7 +143,13 @@ const graph = new WGraph();
 // Adding Nodes for Ground Floor
 let ground = [20, 21, 22, 23, 24, 25, 26, 41, 35, 31, 27, 28, 29, 30, 32, 33, 34, 36, 37, 38, 39, 40, 42, 43, 44, 45, 46];
 
-let groundObj = { 20: 'stairs8', 21: 'rightWRG', 22: 'cafe', 23: 'oldcafe', 24: 'bcourt', 25: 'annapurna', 26: 'openspace', 41: 'phylab', 35: 'cl2', 31: 'cl1', 27: 'EMIlab', 28: 'stairs5', 29: 'temple', 30: 'leftWRG', 32: 'mph', 33: 'stairs6', 34: 'stairs9', 36: 'smallGate', 37: 'entry', 38: 'workshop', 39: 'admin', 40: 'LRC', 42: 'innovation', 43: 'stairs7', 44: 'ground', 45: 'basement', 46: 'OAT' }
+let groundObj = { 20: 'stairs8', 21: 'rightWRG', 22: 'cafe', 23: 'oldcafe', 24: 'bcourt', 25: 'annapurna', 26: 'openspace', 41: 'phylab', 35: 'cl2', 31: 'cl1', 27: 'EMIlab', 28: 'stairs5', 29: 'temple', 30: 'leftWRG', 32: 'mph', 33: 'stairs6', 34: 'stairs9', 36: 'smallGate', 37: 'entry', 38: 'workshop', 39: 'admin', 40: 'LRC', 42: 'innovation', 43: 'stairs7', 44: 'ground', 45: 'basement', 46: 'OAT', 
+    
+101: 'F101', 102: 'F102', 103: 'F103', 104: 'F104', 105: 'F105', 106: 'F106', 107: 'F107', 108: 'F108', 109: 'F109',  110: 'F110', 111: 'F111', 131: 'F131', 124: 'F124', 112: 'F112', 113: 'F113', 116: 'F116', 117: 'F117', 127: 'F127',  126: 'F126', 118: 'F118', 125: 'F125', 123: 'F123', 133: 'F133', 132: 'F132', 130: 'F130', 134: 'F134', 137: 'F137',  158: 'F158', 157: 'F157', 121: 'F121', 138: 'F138', 140: 'F140', 142: 'F142', 148: 'F148', 151: 'F151', 150: 'F150',  153: 'F153', 154: 'F154', 128: 'F128',
+
+201: 'S201', 202: 'S202', 203: 'S203', 204: 'S204', 205: 'S205', 206: 'S206', 207: 'S207', 208: 'S208', 209: 'S209',  217: 'S217', 219: 'S219', 224: 'S224', 225: 'S225', 226: 'S226', 228: 'S228', 229: 'S229', 230: 'S230', 234: 'S234',  237: 'S237', 238: 'S238', 241: 'S241', 240: 'S240', 242: 'S242', 243: 'S243', 264: 'S264', 263: 'S263', 244: 'S244',  246: 'S246', 254: 'S254', 259: 'S259', 255: 'S255', 257: 'S257'
+}
+
 
 // console.log(groundObj[ground[0]]);
 
@@ -448,22 +454,20 @@ function displayPath(path) {
 
 function goBack() {
     window.location.reload();
-    // let path = document.getElementById('path');
-    // path.innerHTML = 'Your Path is : ';
-
-    // let home = document.querySelector('.home');
-    // let display = document.querySelector('.display');
-
-    // home.classList.remove('none');
-    // display.classList.add('none');
 }
 
 function showOnMap(type = 'close') {
-    let map = document.getElementById('groundFloor');
+    let mapg = document.getElementById('groundFloor');
+    let mapf = document.getElementById('firstFloor');
+    let maps = document.getElementById('SecondFloor');
     if (type == 'open') {
-        map.classList.remove('none');
+        mapg.classList.remove('none');
+        mapf.classList.remove('none');
+        maps.classList.remove('none');
     } else {
-        map.classList.add('none');
+        mapg.classList.add('none');
+        mapf.classList.add('none');
+        maps.classList.add('none');
     }
     
 }
