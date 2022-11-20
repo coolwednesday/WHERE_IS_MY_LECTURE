@@ -147,7 +147,7 @@ let groundObj = { 20: 'stairs8', 21: 'rightWRG', 22: 'cafe', 23: 'oldcafe', 24: 
 
 // console.log(groundObj[ground[0]]);
 
-for (let i = 0; i < ground.length; i++){
+for (let i = 0; i < ground.length; i++) {
     graph.addVertex(ground[i]);
 }
 // graph.addVertex("20");
@@ -219,9 +219,9 @@ graph.addEdge("45", "38", 8);
 // graph.addEdge("39", "34", 5);
 
 //Adding Nodes for First Floor
-let first = [101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 131, 124, 112, 113, 116, 117, 127, 126, 118, 125, 123, 133, 132, 130, 134, 137, 158, 157, 121, 138, 140, 142, 148, 151, 150, 153, 154, 128]
+let first = [F101, F102, F103, F104, F105, F106, F107, F108, F109, F110, F111, F131, F124, F112, F113, F116, F117, F127, F126, F118, F125, F123, F133, F132, F130, F134, F137, F158, F157, F121, F138, F140, F142, F148, F151, F150, F153, F154, F128]
 
-for (let i = 0; i < first.length; i++){
+for (let i = 0; i < first.length; i++) {
     graph.addVertex(first[i]);
 }
 
@@ -266,60 +266,60 @@ for (let i = 0; i < first.length; i++){
 // graph.addVertex("128");
 
 //Adding edges for First Floor
-graph.addEdge("111", "113", 1);
-graph.addEdge("116", "113", 1);
-graph.addEdge("116", "117", 1);
-graph.addEdge("117", "127", 1);
-graph.addEdge("127", "126", 2);
-graph.addEdge("126", "118", 1);
-graph.addEdge("117", "118", 2);
-graph.addEdge("125", "118", 1);
-graph.addEdge("125", "121", 1);
-graph.addEdge("121", "123", 1);
-graph.addEdge("124", "123", 3);
-graph.addEdge("124", "131", 7);
-graph.addEdge("111", "103", 1);
-graph.addEdge("107", "103", 4);
-graph.addEdge("104", "103", 4);
-graph.addEdge("101", "107", 2);
-graph.addEdge("103", "112", 2);
-graph.addEdge("101", "112", 2);
-graph.addEdge("107", "112", 3);
-graph.addEdge("108", "104", 2);
-graph.addEdge("130", "131", 2);
-graph.addEdge("109", "131", 2);
-graph.addEdge("105", "109", 2);
-graph.addEdge("105", "148", 4);
-graph.addEdge("105", "153", 4);
-graph.addEdge("130", "132", 1);
-graph.addEdge("133", "132", 1);
-graph.addEdge("133", "134", 1);
-graph.addEdge("134", "158", 1);
-graph.addEdge("158", "157", 2);
-graph.addEdge("134", "137", 3);
-graph.addEdge("137", "157", 1);
-graph.addEdge("137", "138", 1);
-graph.addEdge("138", "140", 1);
-graph.addEdge("140", "142", 1);
-graph.addEdge("142", "148", 4);
-graph.addEdge("142", "153", 4);
-graph.addEdge("148", "153", 1);
-graph.addEdge("148", "151", 1);
-graph.addEdge("154", "151", 1);
-graph.addEdge("154", "150", 1);
-graph.addEdge("153", "150", 1);
-graph.addEdge("102", "148", 3);
-graph.addEdge("102", "153", 3);
-graph.addEdge("102", "106", 1);
-graph.addEdge("102", "110", 2);
-graph.addEdge("105", "142", 4);
-graph.addEdge("128", "108", 1);
-graph.addEdge("124", "128", 1);
+graph.addEdge("F111", "F113", 1);
+graph.addEdge("F116", "F113", 1);
+graph.addEdge("F116", "F117", 1);
+graph.addEdge("F117", "F127", 1);
+graph.addEdge("F127", "F126", 2);
+graph.addEdge("F126", "F118", 1);
+graph.addEdge("F117", "F118", 2);
+graph.addEdge("F125", "F118", 1);
+graph.addEdge("F125", "F121", 1);
+graph.addEdge("F121", "F123", 1);
+graph.addEdge("F124", "F123", 3);
+graph.addEdge("F124", "F131", 7);
+graph.addEdge("F111", "F103", 1);
+graph.addEdge("F107", "F103", 4);
+graph.addEdge("F104", "F103", 4);
+graph.addEdge("F101", "F107", 2);
+graph.addEdge("F103", "F112", 2);
+graph.addEdge("F101", "F112", 2);
+graph.addEdge("F107", "F112", 3);
+graph.addEdge("F108", "F104", 2);
+graph.addEdge("F130", "F131", 2);
+graph.addEdge("F109", "F131", 2);
+graph.addEdge("F105", "F109", 2);
+graph.addEdge("F105", "F148", 4);
+graph.addEdge("F105", "F153", 4);
+graph.addEdge("F130", "F132", 1);
+graph.addEdge("F133", "F132", 1);
+graph.addEdge("F133", "F134", 1);
+graph.addEdge("F134", "F158", 1);
+graph.addEdge("F158", "F157", 2);
+graph.addEdge("F134", "F137", 3);
+graph.addEdge("F137", "F157", 1);
+graph.addEdge("F137", "F138", 1);
+graph.addEdge("F138", "F140", 1);
+graph.addEdge("F140", "F142", 1);
+graph.addEdge("F142", "F148", 4);
+graph.addEdge("F142", "F153", 4);
+graph.addEdge("F148", "F153", 1);
+graph.addEdge("F148", "F151", 1);
+graph.addEdge("F154", "F151", 1);
+graph.addEdge("F154", "F150", 1);
+graph.addEdge("F153", "F150", 1);
+graph.addEdge("F102", "F148", 3);
+graph.addEdge("F102", "F153", 3);
+graph.addEdge("F102", "F106", 1);
+graph.addEdge("F102", "F110", 2);
+graph.addEdge("F105", "F142", 4);
+graph.addEdge("F128", "F108", 1);
+graph.addEdge("F124", "F128", 1);
 
 //Adding nodes for Second Floor
 let second = [201, 202, 203, 204, 205, 206, 207, 208, 209, 217, 219, 224, 225, 226, 228, 229, 230, 234, 237, 238, 241, 240, 242, 243, 264, 263, 244, 246, 254, 259, 255, 257]
 
-for (let i = 0; i < second.length; i++){
+for (let i = 0; i < second.length; i++) {
     graph.addVertex(second[i]);
 }
 // graph.addVertex("201");
@@ -439,7 +439,7 @@ function displayPath(path) {
         pathContainer?.append(pathElement);
     }
 
-    for (let i = 0; i < path.length; i++){
+    for (let i = 0; i < path.length; i++) {
         console.log(groundObj[path[i]]);
         let room = document.getElementById(`${groundObj[path[i]]}`);
         room.style.background = 'pink';
@@ -465,5 +465,5 @@ function showOnMap(type = 'close') {
     } else {
         map.classList.add('none');
     }
-    
+
 }
