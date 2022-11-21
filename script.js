@@ -145,7 +145,7 @@ let ground = [20, 21, 22, 23, 24, 25, 26, 41, 35, 31, 27, 28, 29, 30, 32, 33, 34
 
 let array = [
     'Ground-Floor-Stairs-8', 'Ground-Floor-Right-Washroom', 'Cafe', 'Old-Cafe', 'Badminton-Court',
-    'Annapurna', 'Open-Space', 'Physics-Lab', 'CL-2', 'Cl-1', 'EMI-Lab', 'Ground-Floor-Stairs-5', 'Temple', 'Ground-Floor-Left-Washroom', 'Multi-Purpose-Hall', 'Ground-Floor-Stairs-6',
+    'Annapurna', 'Open-Space', 'Physics-Lab', 'CL-2', 'CL-1', 'EMI-Lab', 'Ground-Floor-Stairs-5', 'Temple', 'Ground-Floor-Left-Washroom', 'Multi-Purpose-Hall', 'Ground-Floor-Stairs-6',
     'Ground-Floor-Stairs-9', 'Small-Gate', 'Entry', 'Workshop-Lab', 'Admin', 'LRC',
     'Innovation-Hub', 'Ground-Floor-Stairs-7', 'Ground', 'Basement', 'Ground-Floor-Stairs-10',
     'O.A.T.',
@@ -169,7 +169,7 @@ let array = [
 
 
 let groundObj = {
-    20: 'Stairs-8', 21: 'Ground-Floor-Right-Washroom', 22: 'Cafe', 23: 'Old-Cafe', 24: 'Badminton-Court', 25: 'Annapurna', 26: 'Open-Space', 41: 'Physics-Lab', 35: 'CL-2', 31: 'Cl-1', 27: 'EMI-Lab', 28: 'Stairs-5', 29: 'Temple', 30: 'Ground-Floor-Left-Washroom', 32: 'Multi-Purpose-Hall', 33: 'Stairs-6', 34: 'Stairs-9', 36: 'Small-Gate', 37: 'Entry', 38: 'Workshop-Lab', 39: 'Admin', 40: 'LRC', 42: 'Innovation-Hub', 43: 'Stairs-7', 44: 'Ground', 45: 'Basement', 46: 'Stairs-10',
+    20: 'Stairs-8', 21: 'Ground-Floor-Right-Washroom', 22: 'Cafe', 23: 'Old-Cafe', 24: 'Badminton-Court', 25: 'Annapurna', 26: 'Open-Space', 41: 'Physics-Lab', 35: 'CL-2', 31: 'CL-1', 27: 'EMI-Lab', 28: 'Stairs-5', 29: 'Temple', 30: 'Ground-Floor-Left-Washroom', 32: 'Multi-Purpose-Hall', 33: 'Stairs-6', 34: 'Stairs-9', 36: 'Small-Gate', 37: 'Entry', 38: 'Workshop-Lab', 39: 'Admin', 40: 'LRC', 42: 'Innovation-Hub', 43: 'Stairs-7', 44: 'Ground', 45: 'Basement', 46: 'Stairs-10',
     47: 'O.A.T.',
 
     101: 'F101', 102: 'F102', 103: 'F103', 104: 'F104', 105: 'F105', 106: 'F106', 107: 'F107', 108: 'F108', 109: 'F109', 110: 'F110', 111: 'F111', 131: 'F131', 124: 'F124', 112: 'F112', 113: 'F113', 116: 'F116', 117: 'F117', 127: 'F127', 126: 'F126', 118: 'F118', 125: 'F125', 123: 'F123', 133: 'F133', 132: 'F132', 130: 'F130', 134: 'F134', 137: 'F137', 158: 'F158', 157: 'F157', 121: 'F121', 138: 'F138', 140: 'F140', 142: 'F142', 148: 'F148', 151: 'F151', 150: 'F150', 153: 'F153', 154: 'F154', 128: 'F128',
@@ -514,7 +514,8 @@ function displayPath(path) {
     for (let i = 0; i < path.length; i++) {
         console.log(groundObj[path[i]]);
         let room = document.getElementById(`${groundObj[path[i]]}`);
-        room.style.background = 'pink';
+        room.style.background = 'greenyellow';
+        room.style.color= 'black';
     }
 }
 
