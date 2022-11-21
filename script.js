@@ -68,8 +68,6 @@ class PriorityQueue {
     }
 }
 
-
-
 class WGraph {
     constructor() {
         this.adjacencyList = {};
@@ -135,9 +133,6 @@ class WGraph {
         return path.concat(smallest).reverse();
     }
 }
-
-
-
 
 const graph = new WGraph();
 // Adding Nodes for Ground Floor
@@ -506,7 +501,7 @@ function displayPath(path) {
     for (let i = 0; i < path.length; i++) {
         let pathElement = document.createElement('div');
         let a = getobj(path[i]);
-        pathElement.textContent = a;
+        pathElement.innerText = (i != path.length - 1) ? `${a}    →` : a ;
         pathElement.className = 'pathElement';
         pathContainer?.append(pathElement);
     }
