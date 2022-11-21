@@ -1,151 +1,163 @@
 * {
-    margin: 0;
-    padding: 0;
-    /* box-sizing: border-box; */
+	margin: 0;
+	padding: 0;
+	/* box-sizing: border-box; */
 }
 
 body {
-    background-color: #000000d0;
+	background-color: #000000d0;
+}
+
+.noselect {
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; /* Safari */
+	-khtml-user-select: none; /* Konqueror HTML */
+	-moz-user-select: none; /* Old versions of Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+	user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
 }
 
 .hero {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100%;
-    opacity: 0.4;
-    background-image: url('https://cache.careers360.mobi/media/colleges/reviews/Jaypee%20Institute%20of%20Information%20Technology%2C%20Sector%20128%2C%20Noida%20(5).jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100%;
+	opacity: 0.4;
+	background-image: url('https://cache.careers360.mobi/media/colleges/reviews/Jaypee%20Institute%20of%20Information%20Technology%2C%20Sector%20128%2C%20Noida%20(5).jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .I {
-    height: 250px;
-    width: 250px;
+	height: 250px;
+	width: 250px;
 }
-
 
 .home {
-    top: 0;
-    height: 100vh;
-    width: 100%;
-    backdrop-filter: blur(5px);
+	top: 0;
+	height: 100vh;
+	width: 100%;
+	backdrop-filter: blur(10px);
 }
 
-
 .heading {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px 40px;
-    flex-direction: column;
-    font-family: 'Open Sans', sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 20px 40px;
+	flex-direction: column;
+	font-family: 'Open Sans', sans-serif;
 }
 
 .heading .jiitLogo {
-    width: 110px;
-    filter: drop-shadow(0 0 0.3rem rgb(252, 253, 253));
-
+	width: 110px;
+	filter: drop-shadow(0 0 0.8rem rgb(252, 253, 253));
 }
 
-
 .heading h2 {
-    margin-top: 10px;
-    padding: 15px;
-    font-size: 56px;
-    color: rgb(255, 255, 255);
-    text-align: center;
+	margin-top: 10px;
+	padding: 15px;
+	font-size: 56px;
+	color: rgb(255, 255, 255);
+	text-align: center;
 }
 
 .heading h4 {
-    margin-top: 10px;
-    padding: 20px;
-    font-size: 26px;
-    color: rgb(255, 255, 255);
-    text-align: center;
+	margin-top: 10px;
+	padding: 20px;
+	font-size: 26px;
+	color: rgb(255, 255, 255);
+	text-align: center;
 }
 
 .searchContainer {
-    padding: 0 175px;
+	padding: 0 175px;
 }
 
 .searchBar {
-    margin-top: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+	margin-top: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
 }
 
 .searchBar select {
-    font-size: 20px;
-    outline: none;
-    padding: 10px 20px;
-    color: rgb(255, 255, 255);
-    background: #050900;
-    border-radius: 4px;
-    -webkit-appearance: none;
-    text-align: center;
-    font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	outline: none;
+	padding: 10px 20px;
+	color: rgb(255, 255, 255);
+	background: #050900;
+	border-radius: 4px;
+	-webkit-appearance: none;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	border: 2px solid white;
 }
 
 .searchBar .search-btn button {
-    padding: 14px 20px;
-    background: #050900;
-    border: 1 px solid white;
-    font-size: 20px;
-    color: rgb(255, 255, 255);
-    border-radius: 4px;
-    cursor: pointer;
+	padding: 14px 20px;
+	background: #050900;
+	border: 1 px solid white;
+	font-size: 20px;
+	color: rgb(255, 255, 255);
+	border-radius: 4px;
+	cursor: pointer;
+	border: 2px solid white;
 }
 
 .display {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    backdrop-filter: blur(5px);
-    width: 100%;
-    min-height: 100vh;
-    flex-direction: column;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	backdrop-filter: blur(8px);
+	width: 100%;
+	min-height: 100vh;
+	flex-direction: column;
 }
 
-.buttons{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 50vh;
-    justify-content: space-between;
+.buttons {
+	margin-top: 40px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-height: 40vh;
+	justify-content: space-between;
 }
 
-.path{
-    text-align: center;
-    margin: 20px;
-    font-size: 48px;
-    color: #F5F9FF;
+.path {
+	text-align: center;
+	margin: 20px;
+	font-size: 48px;
+	color: #f5f9ff;
+	font-family: 'Open Sans', sans-serif;
 }
 
 .pathElement {
-    font-size: 48px;
-    color: #F5F9FF;
-    display: inline-block;
-    margin: 20px 20px;
+	font-size: 36px;
+	color: #f5f9ff;
+	display: inline-block;
+	margin: 20px 20px;
 }
 
 .anotherButton button {
-    padding: 14px 30px;
-    background: #050900;
-    border: none;
-    font-size: 16px;
-    color: white;
-    border-radius: 6px;
-    cursor: pointer;
+	padding: 14px 30px;
+	background: #050900;
+	font-size: 16px;
+	color: white;
+	border-radius: 6px;
+	cursor: pointer;
+	margin: 30px;
+	outline: none;
+	border: 2px solid white;
 }
 
-.groundFloor{
-    margin-top: 40px;
+.groundFloor {
+	margin-top: 40px;
 }
 
-.none{
-    display: none;
+.none {
+	display: none;
 }
