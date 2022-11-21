@@ -1,85 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to JIIT - Route/Classroom Finder</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="groundFloor.css">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>WHERE IS MY LECTURE ?</title>
+
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+	<link rel="icon" type="image/x-icon" href="pin.png">
+	<link rel="stylesheet" href="groundFloor.css">
 	<link rel="stylesheet" href="firstFloor.css">
 	<link rel="stylesheet" href="secondFloor.css">
 </head>
+
 <body>
-    <div class="hero">
-        <img src="" alt="">
-    </div>
-    <div class="home">
-        
-        <div class="heading">
-            <img src="http://www.jiit.ac.in/jiit/ETTIC/assets/img/jiit_logo.png" alt="" class="jiitLogo">
-            <h1>Welcome to JIIT-128 Classroom Finder</h1>
-            <img src="pin.png" alt="">
-        </div>
+	<div class="hero">
+		<img src="" alt="">
+	</div>
 
-        <div class="searchContainer">
-            <div class="searchBar">
-                <div>
-                    <select name="start" id="start" class="s">
-                        <option value="">Select Starting Point</option>
-                    </select>
-                </div>
-                <div>
-                    <select name="end" id="end">
-                        <option value="">Select Destination</option>
-                    </select>
-                </div>
-                <div class="search-btn">
-                    <button type="button" id="searchBtn">Search Path</button>
-                </div>
-            </div>
-        </div>
-    </div>
+	<div class="home">
 
-    <div class="display none">
-        <div class="buttons">
-            <div id="path" class="path">
-                Your Path is :
-            </div>
-            
-            <div class="anotherButton">
-                <button type="button" onclick="goBack()">Find Another Route</button>
-            </div>
-            
-            <div class="anotherButton">
-                <button type="button" onclick="showOnMap('open')">Show on Map</button>
-            </div>
-        </div>
+		<div class="heading">
+			<img src="http://www.jiit.ac.in/jiit/ETTIC/assets/img/jiit_logo.png" alt="" class="jiitLogo">
+			<h2>WELCOME TO JIIT-128 CLASSROOM FINDER</h2>
+			<h4>DISCOVER THE SHORTEST ROUTE TO YOUR LECTURE HALL</h4>
+			<img class="I" src="pin.png" alt="">
 
-        <div id="groundFloor" class="groundFloor none">
+		</div>
+
+
+
+		<div class="searchContainer">
+			<div class="searchBar">
+				<div>
+					<select name="start" id="start" class="s">
+						<option value="">Select Starting Point</option>
+					</select>
+				</div>
+				<div>
+					<select name="end" id="end">
+						<option value="">Select Destination</option>
+					</select>
+				</div>
+				<div class="search-btn">
+					<button type="button" id="searchBtn">Search Path</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="display none">
+		<div class="buttons">
+			<div id="path" class="path">
+				Your Path is :
+			</div>
+
+			<div class="anotherButton">
+				<button type="button" onclick="goBack()">Find Another Route</button>
+			</div>
+
+			<div class="anotherButton">
+				<button type="button" onclick="showOnMap('open')">Show on Map</button>
+			</div>
+		</div>
+
+		<div id="groundFloor" class="groundFloor none">
+			<div class="blur"></div>
 			<h1>Ground Floor</h1>
-			<div id="basement" class="ground ground52">Basement</div>
-			<div id="workshop" class="ground ground50">Workshop Lab</div>
-			<div id="ground" class="ground ground19">Ground</div>
+			<div id="Basement" class="ground ground52">Basement</div>
+			<div id="Workshop-Lab" class="ground ground50">Workshop Lab</div>
+			<div id="Ground" class="ground ground19">Ground</div>
 			<div id="ground37" class="ground ground37"></div>
-			<div id="cl1" class="ground ground22">CL1</div>
-			<div id="EMIlab" class="ground ground32">EMI Lab</div>
-			<div id="annapurna" class="ground ground9">Annapurna</div>
+			<div id="CL-1" class="ground ground22">CL1</div>
+			<div id="EMI-Lab" class="ground ground32">EMI Lab</div>
+			<div id="Annapurna" class="ground ground9">Annapurna</div>
 			<div id="ground10" class="ground ground10"></div>
-			<div id="cafe" class="ground ground12">Cafe</div>
-			<div id="stairs9" class="ground ground13">9</div>
+			<div id="Cafe" class="ground ground12">Cafe</div>
+			<div id="Stairs-9" class="ground ground13">9</div>
 			<div id="LRC" class="ground ground14">LRC</div>
-			<div id="admin" class="ground ground15">Admin Department</div>
-			<div id="phylab" class="ground ground17">Physics Lab</div>
+			<div id="Admin" class="ground ground15">Admin Department</div>
+			<div id="Physics-Lab" class="ground ground17">Physics Lab</div>
 			<div id="ground24" class="ground ground24"></div>
-			<div id="bcourt" class="ground ground26">Badminton Court</div>
-			<div id="ground27" class="ground ground27">10</div>
-			<div id="OAT" class="ground ground28">O.A.T.</div>
-			<div id="innovation" class="ground ground29">Innovation Hub</div>
-			<div id="leftWRG" class="ground ground322">Left Washroom</div>
-			<div id="rightWRG" class="ground ground33">Right Washroom</div>
-			<div id="cl2" class="ground ground36">CL2</div>
+			<div id="Badminton-Court" class="ground ground26">Badminton Court</div>
+			<div id="Stairs-10" class="ground ground27">10</div>
+			<div id="O.A.T." class="ground ground28">O.A.T.</div>
+			<div id="Innovation-Hub" class="ground ground29">Innovation Hub</div>
+			<div id="Ground-Floor-Left-Washroom" class="ground ground322">Left Washroom</div>
+			<div id="Ground-Floor-Right-Washroom" class="ground ground33">Right Washroom</div>
+			<div id="CL-2" class="ground ground36">CL2</div>
 			<div id="gline3" class="gline gline3"></div>
 			<div id="gline7" class="gline gline7"></div>
 			<div id="gline18" class="gline gline18"></div>
@@ -88,13 +98,13 @@
 			<div id="gline28" class="gline gline28"></div>
 			<!-- <div id="gline29" class="gline gline29"></div> -->
 
-            
-			<div id="stairs7" class="ground ground39">7</div>
-			<div id="openspace" class="ground ground51">Open Space</div>
+
+			<div id="Stairs-7" class="ground ground39">7</div>
+			<div id="Open-Space" class="ground ground51">Open Space</div>
 			<div id="gline39" class="gline gline39"></div>
-			<div id="stairs8" class="ground ground42">8</div>
-			<div id="stairs5" class="ground ground45">5</div>
-			<div id="mph" class="ground ground46">Multi Purpose Hall</div>
+			<div id="Stairs-8" class="ground ground42">8</div>
+			<div id="Stairs-5" class="ground ground45">5</div>
+			<div id="Multi-Purpose-Hall" class="ground ground46">Multi Purpose Hall</div>
 			<div id="gline42" class="gline gline42"></div>
 			<div id="gline43" class="gline gline43"></div>
 			<div id="gline44" class="gline gline44"></div>
@@ -117,15 +127,15 @@
 			<div id="gline62" class="gline gline62"></div>
 			<div id="gline63" class="gline gline63"></div>
 			<div id="gline64" class="gline gline64"></div>
-			<div id="stairs6" class="ground ground47">6</div>
-			<div id="smallGate" class="ground ground48">Gate</div>
-			<div id="temple" class="ground ground49">Temple</div>
+			<div id="Stairs-6" class="ground ground47">6</div>
+			<div id="Small-Gate" class="ground ground48">Gate</div>
+			<div id="Temple" class="ground ground49">Temple</div>
 			<div id="gline57" class="gline gline57"></div>
 			<div id="gline65" class="gline gline65"></div>
 			<div id="gline66" class="gline gline66"></div>
 			<div id="gline67" class="gline gline67"></div>
-			<div id="oldcafe" class="ground ground61">Old Cafe</div>
-			<div id="entry" class="ground ground62">Entry</div>
+			<div id="Old-Cafe" class="ground ground61">Old Cafe</div>
+			<div id="Entry" class="ground ground62">Entry</div>
 		</div>
 		<div id='firstFloor' class='firstFloor none'>
 			<h1>First Floor</h1>
@@ -146,19 +156,20 @@
 			<div id='F124' class='rectangle rectangle15'>EDD Drawing Hall</div>
 			<div id='F123' class='rectangle rectangle16'>CR-7</div>
 			<div id='F121' class='rectangle rectangle17'>T4</div>
-			<div id='F133' class='rectangle rectangle18'>Communication Lab</div>
 			<div id='F158' class='rectangle rectangle19'>Project Lab CSE</div>
-			<div id='F134' class='rectangle rectangle20'>DSP Lab</div>
+
 			<div id='F137' class='rectangle rectangle21'>CR-8</div>
 			<div id='F157' class='rectangle rectangle23'>Project Lab ECE</div>
 			<div id='F138' class='rectangle rectangle22'>CR-9</div>
 			<div id='F140' class='rectangle rectangle24'>CICR Lab</div>
 			<div id='F142' class='rectangle rectangle25'>VLSI Project Lab</div>
+
 			<div id='rectangle26' class='rectangle rectangle26'></div>
 			<div id='F105' class='rectangle rectangle27'>3</div>
 			<div id='F148' class='rectangle rectangle28'>CR-44</div>
 			<div id='F151' class='rectangle rectangle29'>CL-4</div>
 			<div id='F153' class='rectangle rectangle30'>CR-45</div>
+						
 			<div id='F154' class='rectangle rectangle31'>CR-60</div>
 			<div id='F101' class='rectangle rectangle32'>Left Washroom</div>
 			<div id='F102' class='rectangle rectangle33'>Right Washroom</div>
@@ -176,8 +187,10 @@
 			<div id='F103' class='rectangle rectangle45'>1</div>
 			<div id='F112' class='rectangle rectangle46'>Multi Purpose Hall(first Floor)</div>
 			<div id='rectangle48' class='rectangle rectangle48'></div>
-	
-	
+			<div id='F133' class='rectangle rectangle18'>Communication Lab</div>
+						<div id='F134' class='rectangle rectangle20'>DSP Lab</div>
+
+
 			<div id='fline1' class='fline fline1'></div>
 			<div id='fline2' class='fline fline2'></div>
 			<div id='fline3' class='fline fline3'></div>
@@ -248,7 +261,7 @@
 			<div id='fline77' class='fline fline77'></div>
 			<div id='fline78' class='fline fline78'></div>
 			<div id='fline79' class='fline fline79'></div>
-	
+
 		</div>
 		<div id="SecondFloor" class="secondFloor none">
 			<h1>Second Floor</h1>
@@ -287,8 +300,8 @@
 			<div id="S206" class="room room35">4</div>
 			<div id="S204" class="room room36">2</div>
 			<div class="room room37"></div>
-	
-	
+
+
 			<div class="sline sline1"></div>
 			<div class="sline sline2"></div>
 			<div class="sline sline3"></div>
@@ -333,11 +346,12 @@
 			<div class="sline sline43"></div>
 			<div class="sline sline44"></div>
 			<div class="sline sline45"></div>
-	
-		</div>
-    </div>
 
-    <script src="index.js"></script>
-    <script src="script.js"></script>
+		</div>
+	</div>
+
+	<script src="index.js"></script>
+	<script src="script.js"></script>
 </body>
+
 </html>

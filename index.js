@@ -2,36 +2,62 @@
 // let end = document.getElementById('end');
 
 // let arr = [20, 21, 22, 23, 24, 25, 26, 41, 35, 31, 27, 28, 29, 30, 32, 33, 34, 36, 37, 38, 39, 40, 42, 43, 44, 45, 46, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 131, 124, 112, 113, 116, 117, 127, 126, 118, 125, 123, 133, 132, 130, 134, 137, 158, 157, 121, 138, 140, 142, 148, 151, 150, 153, 154, 128];
-let arr = [20, 21, 22, 23, 24, 25, 26, 41, 35, 31, 27, 28, 29, 30, 32, 33, 34, 36, 37, 38, 39, 40, 42, 43, 44, 45, 46, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 131, 124, 112, 113, 116, 117, 127, 126, 118, 125, 123, 133, 132, 130, 134, 137, 158, 157, 121, 138, 140, 142, 148, 151, 150, 153, 154, 128, 201, 202, 203, 204, 205, 206, 207, 208, 209, 217, 219, 224, 225, 226, 228, 229, 230, 234, 237, 238, 241, 240, 242, 243, 264, 263, 244, 246, 254, 259, 255, 257];
+/*let arr = [20, 21, 22, 23, 24, 25, 26, 41, 35, 31, 27, 28, 29, 30, 32, 33, 34, 36, 37, 38, 39, 40, 42, 43, 44, 45, 46, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 131, 124, 112, 113, 116, 117, 127, 126, 118, 125, 123, 133, 132, 130, 134, 137, 158, 157, 121, 138, 140, 142, 148, 151, 150, 153, 154, 128, 201, 202, 203, 204, 205, 206, 207, 208, 209, 217, 219, 224, 225, 226, 228, 229, 230, 234, 237, 238, 241, 240, 242, 243, 264, 263, 244, 246, 254, 259, 255, 257];
+*/
+let arr = [
+    'Ground-Floor-Stairs-8', 'Ground-Floor-Right-Washroom', 'Cafe', 'Old-Cafe', 'Badminton-Court',
+    'Annapurna', 'Open-Space', 'Physics-Lab', 'CL-2', 'CL-1', 'EMI-Lab', 'Ground-Floor-Stairs-5', 'Temple', 'Ground-Floor-Left-Washroom', 'Multi-Purpose-Hall', 'Ground-Floor-Stairs-6',
+    'Ground-Floor-Stairs-9', 'Small-Gate', 'Entry', 'Workshop-Lab', 'Admin', 'LRC',
+    'Innovation-Hub', 'Ground-Floor-Stairs-7', 'Ground', 'Basement', 'Ground-Floor-Stairs-10',
+    'O.A.T.',
 
+    'First-Floor-Left-Washroom', 'First-Floor-Right-Washroom', 'First-Floor-Stairs-1',
+    'First-Floor-Stairs-2', 'First-Floor-Stairs-3', 'First-Floor-Stairs-4', 'First-Floor-Stairs-5',
+    'First-Floor-Stairs-6', 'First-Floor-Stairs-7', 'First-Floor-Stairs-8', '111', 'CR-1',
+    'Faculty-Block-ECE', 'EDD-Drawing-Hall', 'M.P.H-First-Floor', '113', 'CR-2', '116', 'T1', '117', 'LT-2', '127', 'T2', '126', 'T3', '118', 'LT1', 'SR-05', '123', 'CR-7', '133', 'Communication-Lab', '132', 'M.M.L. Lab', '130',
+    'Basic-Electronics-Lab', '134', 'DSP Lab', '137', 'CR-8', '158', 'Project-Lab-CSE',
+    '157', 'Project-Lab-ECE', '121', 'T4', '138', 'CR-9', '140', 'CICR-Lab', '142', 'VLSI-Project-Lab', '148', 'CR-44', '151', 'CL-4', '150', 'CR-59', '153',
+    'CR-45', '154', 'CR-60', 'CL-3', 'Server-Room',
+
+    'Second-Floor-Left-Washroom', 'Second-Floor-Right-Washroom', 'Second-Floor-Stairs-1',
+    'Second-Floor-Stairs-2', 'Second-Floor-Stairs-3', 'Second-Floor-Stairs-4', 'Faculty-Block-CSE',
+    'Faculty-Block-Other-Subjects', 'HSS-Faculty-Block', '217', 'CR-3', '219', 'Humanities-Lab', 'Analog-to-Digital-Lab', '224', 'T5', '225', 'CR-4', '226', 'CR-5', '228',
+    'T6', '229', 'CR-6', '230', 'T8', '234', 'Electromagnetics-Lab', '237',
+    'Microcontrollers-Lab', '238', 'CR-53', '241', 'Mobile-Technology-Lab', '240', 'CR-54', '242', 'CR-46', '243', 'P-&-D-Computing-Lab', '264', 'Information-Security-Lab',
+    '263', 'SR-06', 'LT-9', '244', 'TR-09', '246', 'LT-3', '254', 'LT-4',
+    '259', 'LT5', '255', 'LT-6', '257'
+];
 let roomObj = {
-    20: 'stairs8', 21: 'rightWRG', 22: 'cafe', 23: 'oldcafe', 24: 'bcourt', 25: 'annapurna', 26: 'openspace', 41: 'phylab', 35: 'cl2', 31: 'cl1', 27: 'EMIlab', 28: 'stairs5', 29: 'temple', 30: 'leftWRG', 32: 'mph', 33: 'stairs6', 34: 'stairs9', 36: 'smallGate', 37: 'entry', 38: 'workshop', 39: 'admin', 40: 'LRC', 42: 'innovation', 43: 'stairs7', 44: 'ground', 45: 'basement', 46: 'OAT', 
-    
-    101: 'F101', 102: 'F102', 103: 'F103', 104: 'F104', 105: 'F105', 106: 'F106', 107: 'F107', 108: 'F108', 109: 'F109',  110: 'F110', 111: 'F111', 131: 'F131', 124: 'F124', 112: 'F112', 113: 'F113', 116: 'F116', 117: 'F117', 127: 'F127',  126: 'F126', 118: 'F118', 125: 'F125', 123: 'F123', 133: 'F133', 132: 'F132', 130: 'F130', 134: 'F134', 137: 'F137',  158: 'F158', 157: 'F157', 121: 'F121', 138: 'F138', 140: 'F140', 142: 'F142', 148: 'F148', 151: 'F151', 150: 'F150',  153: 'F153', 154: 'F154', 128: 'F128',
-    
-    201: 'S201', 202: 'S202', 203: 'S203', 204: 'S204', 205: 'S205', 206: 'S206', 207: 'S207', 208: 'S208', 209: 'S209',  217: 'S217', 219: 'S219', 224: 'S224', 225: 'S225', 226: 'S226', 228: 'S228', 229: 'S229', 230: 'S230', 234: 'S234',  237: 'S237', 238: 'S238', 241: 'S241', 240: 'S240', 242: 'S242', 243: 'S243', 264: 'S264', 263: 'S263', 244: 'S244',  246: 'S246', 254: 'S254', 259: 'S259', 255: 'S255', 257: 'S257'
+    'Ground-Floor-Stairs-8': 20, 'Ground-Floor-Right-Washroom': 21, 'Cafe': 22, 'Old-Cafe': 23, 'Badminton-Court': 24, 'Annapurna': 25, 'Open-Space': 26, 'Physics-Lab': 41, 'CL-2': 35, 'CL-1': 31, 'EMI-Lab': 27, 'Ground-Floor-Stairs-5': 28, 'Temple': 29, 'Ground-Floor-Left-Washroom': 30, 'Multi-Purpose-Hall': 32, 'Ground-Floor-Stairs-6': 33, 'Ground-Floor-Stairs-9': 34, 'Small-Gate': 36, 'Entry': 37, 'Workshop-Lab': 38, 'Admin': 39, 'LRC': 40, 'Innovation-Hub': 42, 'Ground-Floor-Stairs-7': 43, 'Ground': 44, 'Basement': 45, 'Ground-Floor-Stairs-10': 46,
+    'O.A.T.': 47,
+
+    'First-Floor-Left-Washroom': 101, 'First-Floor-Right-Washroom': 102, 'First-Floor-Stairs-1': 103, 'First-Floor-Stairs-2': 104, 'First-Floor-Stairs-3': 105, 'First-Floor-Stairs-4': 106, 'First-Floor-Stairs-5': 107, 'First-Floor-Stairs-6': 108, 'First-Floor-Stairs-7': 109, 'First-Floor-Stairs-8': 110, '111': 111, 'CR-1': 111, 'Faculty-Block-ECE': 131, 'EDD-Drawing-Hall': 124, 'M.P.H-First-Floor': 112, '113': 113, 'CR-2': 113, '116': 116, 'T1': 116, '117': 117, 'LT-2': 117, '127': 127, 'T2': 127, '126': 126, 'T3': 126, '118': 118, 'LT1': 118, 'SR-05': 125, '123': 123, 'CR-7': 123, '133': 133, 'Communication-Lab': 133, '132': 132, 'M.M.L. Lab': 132, '130': 130, 'Basic-Electronics-Lab': 130, '134': 134, 'DSP Lab': 134, '137': 137, 'CR-8': 137, '158': 158, 'Project-Lab-CSE': 158, '157': 157, 'Project-Lab-ECE': 157, '121': 121, 'T4': 121, '138': 138, 'CR-9': 138, '140': 140, 'CICR-Lab': 140, '142': 142, 'VLSI-Project-Lab': 142, '148': 148, 'CR-44': 148, '151': 151, 'CL-4': 151, '150': 150, 'CR-59': 150, '153': 153, 'CR-45': 153, '154': 154, 'CR-60': 154, 'CL-3': 154, 'Server-Room': 128,
+
+    'Second-Floor-Left-Washroom': 201, 'Second-Floor-Right-Washroom': 202, 'Second-Floor-Stairs-1': 203, 'Second-Floor-Stairs-2': 204, 'Second-Floor-Stairs-3': 205, 'Second-Floor-Stairs-4': 206, 'Faculty-Block-CSE': 207, 'Faculty-Block-Other-Subjects': 208, 'HSS-Faculty-Block': 209, '217': 217, 'CR-3': 217, '219': 219, 'Humanities-Lab': 219, 'Analog-to-Digital-Lab': 224, '224': 224, 'T5': 225, '225': 225, 'CR-4': 226, '226': 226, 'CR-5': 228, '228': 228, 'T6': 229, '229': 229, 'CR-6': 230, '230': 230, 'T8': 234, '234': 234, 'Electromagnetics-Lab': 237, '237': 237, 'Microcontrollers-Lab': 238, '238': 238, 'CR-53': 241, '241': 241, 'Mobile-Technology-Lab': 240, '240': 240, 'CR-54': 242, '242': 242, 'CR-46': 243, '243': 243, 'P-&-D-Computing-Lab': 264, '264': 264, 'Information-Security-Lab': 263, '263': 263, 'SR-06': 244, 'LT-9': 244, '244': 244, 'TR-09': 246, '246': 246, 'LT-3': 254, '254': 254, 'LT-4': 259, '259': 259, 'LT5': 255, '255': 255, 'LT-6': 257, '257': 257
 }
 
-console.log(roomObj.length);
+
+//console.log(roomObj.length);
 
 for (let i = 0; i < arr.length; i++) {
     let option = document.createElement('option');
-    option.text = roomObj[arr[i]];
-    option.value = arr[i];
+    option.text = arr[i];
+    option.value = roomObj[arr[i]];
     start.add(option);
 }
 for (let i = 0; i < arr.length; i++) {
     let option = document.createElement('option');
-    option.text = roomObj[arr[i]];
-    option.value = arr[i];
+    option.text = arr[i];
+    option.value = roomObj[arr[i]];
     end.add(option);
 }
 
 
 
-// let roomObj = { 20: ['stairs', 'hello'], 22: 'cafe', 23: 'oldcafe', 24: 'bcourt', 25: 'annapurna', 26: 'openspace', 41: 'phylab', 35: 'cl2', 31: 'cl1', 27: 'EMIlab' }
 
-// console.log(roomObj);
+
+// let roomObj = { 20: ['stairs', 'hello'], 22: 'cafe', 23: 'oldcafe', 24: 'bcourt', 25: 'annapurna', 26: 'openspace', 41: 'phylab', 35: 'cl2', 31: 'cl1', 27: 'EMIlab' }
+ //console.log(roomObj);
 
 
 
