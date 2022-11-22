@@ -361,19 +361,7 @@ function showPath() {
     display.classList.remove('none');
 }
 
-/*
-function getobj(p) {
-    let a = '';
-    for (let i = 0; i < array.length; i++) {
-        if (roomObj[array[i]] == p) {
-            a = a.concat(array[i]);
-            a=a.concat('/');
-        }
-    }
-    console.log(a);
-    return a;
-}
-*/
+
 function getobj(p) {
     let a = '';
     let j = 0;
@@ -403,12 +391,6 @@ function displayPath(path) {
         pathContainer?.append(pathElement);
     }
 
-    for (let i = 0; i < path.length; i++) {
-        console.log(groundObj[path[i]]);
-        let room = document.getElementById(`${groundObj[path[i]]}`);
-        room.style.background = 'greenyellow';
-        room.style.color= 'black';
-    }
 }
 
 function goBack() {
@@ -419,10 +401,19 @@ function showOnMap(type = 'close') {
     let mapg = document.getElementById('groundFloor');
     let mapf = document.getElementById('firstFloor');
     let maps = document.getElementById('SecondFloor');
+    
     if (type == 'open') {
+        
         mapg.classList.remove('none');
         mapf.classList.remove('none');
         maps.classList.remove('none');
+        
+        for (let i = 0; i < path.length; i++) {
+            let room = document.getElementById(`${groundObj[path[i]]}`);
+            room.style.background = 'greenyellow';
+            room.style.color= 'black';
+        }
+
     } else {
         mapg.classList.add('none');
         mapf.classList.add('none');
