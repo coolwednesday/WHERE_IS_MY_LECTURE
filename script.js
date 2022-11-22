@@ -307,15 +307,15 @@ graph.addEdge("205", "238", 1);
 graph.addEdge("240", "238", 1);
 graph.addEdge("240", "241", 1);
 graph.addEdge("242", "241", 1);
-graph.addEdge("243", "242", 1);
+graph.addEdge("243", "242", 2);
 graph.addEdge("264", "242", 1);
 graph.addEdge("243", "263", 1);
-graph.addEdge("264", "263", 1);
+graph.addEdge("264", "263", 2);
 graph.addEdge("244", "243", 1);
-graph.addEdge("246", "244", 1);
-graph.addEdge("246", "237", 1);
-// graph.addEdge("237", "259", 3);
-// graph.addEdge("237", "254", 3);
+graph.addEdge("246", "244", 1); //give tr09
+graph.addEdge("246", "209", 1);
+graph.addEdge("209", "259", 3);
+graph.addEdge("209", "254", 3);
 graph.addEdge("259", "254", 1);
 graph.addEdge("259", "257", 1);
 graph.addEdge("257", "255", 1);
@@ -324,18 +324,19 @@ graph.addEdge("202", "259", 3);
 graph.addEdge("202", "254", 3);
 graph.addEdge("202", "206", 2);
 graph.addEdge("217", "201", 4);
+graph.addEdge("201", "203", 2);
 
 //edges betwwen stairs to connect all the floors
 //Connecting 2nd and 1st floor
 graph.addEdge("203", "103", 3);
-graph.addEdge("204", "104", 3);
-graph.addEdge("205", "105", 3);
-graph.addEdge("206", "106", 5);
+graph.addEdge("204", "104", 5);
+graph.addEdge("201", "101", 3);
+graph.addEdge("202", "102", 3);
 //Connecting 1st and Ground floor
-graph.addEdge("107", "28", 3);
-graph.addEdge("108", "33", 3);
-graph.addEdge("109", "43", 3);
-graph.addEdge("110", "20", 5);
+graph.addEdge("105", "28", 3);
+graph.addEdge("106", "33", 3);
+graph.addEdge("107", "43", 3);
+graph.addEdge("108", "20", 5);
 
 // console.log(graph.Dijkstra("117", "226"));
 
