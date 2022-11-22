@@ -24,11 +24,30 @@
 		<div class="heading">
 			<img src="http://www.jiit.ac.in/jiit/ETTIC/assets/img/jiit_logo.png" alt="" class="jiitLogo" />
 			<h2>WELCOME TO JIIT-128 CLASSROOM FINDER</h2>
+		</div>
+		
+		<div class="choiceContainer ">
+			<img class="I" src="pin.png" alt="" />
+			<div class="choice">
+				<div class="choiceBtn">
+					<button id="cName" onclick="handlePages('cName')" type="button">Get your Classroom Name</button>
+				</div>
+				<div class="choiceBtn">
+					<button id="route" onclick="handlePages('routeFinder')" type="button">Get a route to Your Classroom</button>
+				</div>
+			</div>
+		</div>
+		
+		<div class="cName none">
+			Your classroom is
+			<div class="search-btn">
+					<button type="button" onclick="goBack()">Back</button>
+				</div>
+		</div>
+		
+		<div class="routeFinder none">
 			<h4>DISCOVER THE SHORTEST ROUTE TO YOUR LECTURE HALL</h4>
 			<img class="I" src="pin.png" alt="" />
-		</div>
-
-		<div class="searchContainer">
 			<div class="searchBar">
 				<div>
 					<select name="start" id="start" class="s">
@@ -43,6 +62,10 @@
 				<div class="search-btn">
 					<button type="button" id="searchBtn">Search Path</button>
 				</div>
+
+				<div class="search-btn">
+					<button type="button" onclick="goBack()">Back</button>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -52,13 +75,13 @@
 			<div id="path" class="path">
 				<strong>Intermediate Classroom List : </strong>
 			</div>
-
+			
 			<div class="anotherButton">
-				<button type="button" onclick="goBack()">Find Another Route</button>
+				<button type="button" onclick="showOnMap('open')">Show on Map</button>
 			</div>
 
 			<div class="anotherButton">
-				<button type="button" onclick="showOnMap('open')">Show on Map</button>
+				<button type="button" onclick="goBack()">Back to Home</button>
 			</div>
 		</div>
 

@@ -48,15 +48,10 @@ for(let i=0 ;i<arr.length;i++){
 }
 */
 
-
-
-
-
-
-
-
-
-
-
-
-
+// Managing Pages
+function handlePages(container) {
+    let box = document.querySelector(`.${container}`);
+    let buttonContainer = document.querySelector('.choiceContainer');
+    box.classList.remove('none');
+    buttonContainer.classList.add('none');
+}
