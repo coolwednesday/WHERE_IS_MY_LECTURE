@@ -136,7 +136,7 @@ class WGraph {
 
 const graph = new WGraph();
 // Adding Nodes for Ground Floor
-let ground = [20, 21, 22, 23, 24, 25, 26, 41, 35, 31, 27, 28, 29, 30, 32, 33, 34, 36, 37, 38, 39, 40, 42, 43, 44, 45, 46];
+let ground = [20, 21, 22, 23, 24, 25, 26, 41, 35, 31, 27, 28, 29, 30, 32, 33, 34, 36, 37, 38, 39, 40, 42, 43, 44, 45, 46, 47];
 
 let array = [
     'Ground-Floor-Stairs-8', 'Ground-Floor-Right-Washroom', 'Cafe', 'Old-Cafe', 'Badminton-Court',
@@ -182,7 +182,7 @@ graph.addEdge("21", "22", 3);
 graph.addEdge("22", "24", 1);
 graph.addEdge("24", "25", 3);
 graph.addEdge("25", "26", 2);
-graph.addEdge("26", "41", 6);
+graph.addEdge("26", "41", 4);
 graph.addEdge("41", "35", 1);
 graph.addEdge("31", "35", 2);
 graph.addEdge("27", "31", 3);
@@ -190,27 +190,32 @@ graph.addEdge("27", "28", 1);
 graph.addEdge("29", "28", 1);
 graph.addEdge("30", "29", 2);
 graph.addEdge("32", "30", 2);
-graph.addEdge("32", "33", 1);
+graph.addEdge("32", "33", 2);
 graph.addEdge("34", "32", 2);
 graph.addEdge("38", "34", 3);
 graph.addEdge("34", "36", 1);
 graph.addEdge("33", "34", 1);
-graph.addEdge("33", "39", 5);
+graph.addEdge("33", "39", 4);
 graph.addEdge("40", "43", 2);
 graph.addEdge("42", "43", 2);
-graph.addEdge("23", "42", 2);
-graph.addEdge("20", "23", 2);
+graph.addEdge("42","47",2);
+graph.addEdge("47","23",1);
+graph.addEdge("47","20",1);
+//graph.addEdge("23", "42", 3);
+//graph.addEdge("20", "23", 2);
 graph.addEdge("29", "32", 1);
 graph.addEdge("36", "39", 4);
+//graph.addEdge("40","25",2);
+//graph.addEdge("43","24",2);
 // graph.addEdge("32", "31", 7);
-graph.addEdge("39", "41", 3);
+graph.addEdge("39", "41", 2);
 graph.addEdge("26", "44", 2);
 graph.addEdge("40", "25", 2);
 graph.addEdge("24", "43", 2);
 graph.addEdge("22", "42", 2);
 graph.addEdge("45", "46", 3);
-graph.addEdge("37", "40", 4);
-graph.addEdge("39", "37", 4);
+graph.addEdge("37", "40", 3);
+graph.addEdge("39", "37", 3);
 graph.addEdge("37", "26", 2);
 // graph.addEdge("43", "46", 2);
 graph.addEdge("45", "38", 8);
@@ -330,13 +335,13 @@ graph.addEdge("201", "203", 2);
 //Connecting 2nd and 1st floor
 graph.addEdge("203", "103", 3);
 graph.addEdge("204", "104", 5);
-graph.addEdge("205", "105", 3);
-graph.addEdge("206", "106", 3);
+graph.addEdge("201", "101", 3);
+graph.addEdge("202", "102", 3);
 //Connecting 1st and Ground floor
-graph.addEdge("107", "28", 3);
+graph.addEdge("105", "28", 3);
 graph.addEdge("108", "33", 3);
-graph.addEdge("109", "43", 3);
-graph.addEdge("110", "20", 5);
+graph.addEdge("107", "43", 3);
+graph.addEdge("108", "20", 5);
 
 // console.log(graph.Dijkstra("117", "226"));
 
@@ -377,16 +382,16 @@ function getobj(p) {
             }
         }
     }
-    console.log(a);
-    return a;
-}
-
+        console.log(a);
+        return a;
+    }
+    
 function displayPath(path) {
     let pathContainer = document.getElementById('path');
     for (let i = 0; i < path.length; i++) {
         let pathElement = document.createElement('div');
         let a = getobj(path[i]);
-        pathElement.innerText = (i != path.length - 1) ? `${a}    →` : a;
+        pathElement.innerText = (i != path.length - 1) ? `${a}    →` : a ;
         pathElement.className = 'pathElement';
         pathContainer?.append(pathElement);
     }
@@ -401,17 +406,17 @@ function showOnMap(type = 'close') {
     let mapg = document.getElementById('groundFloor');
     let mapf = document.getElementById('firstFloor');
     let maps = document.getElementById('SecondFloor');
-
+    
     if (type == 'open') {
-
+        
         mapg.classList.remove('none');
         mapf.classList.remove('none');
         maps.classList.remove('none');
-
+        
         for (let i = 0; i < path.length; i++) {
             let room = document.getElementById(`${groundObj[path[i]]}`);
             room.style.background = 'greenyellow';
-            room.style.color = 'black';
+            room.style.color= 'black';
         }
 
     } else {
