@@ -447,8 +447,13 @@ function showOnMap(type = 'close') {
 
         for (let i = 0; i < path.length; i++) {
             let room = document.getElementById(`${groundObj[path[i]]}`);
-            room.style.background = 'greenyellow';
-            room.style.color = 'black';
+            if (i == 0 || i == path.length - 1) {
+                room.style.background = 'turquoise';
+                room.style.color = 'white';
+            } else {
+                room.style.background = 'greenyellow';
+                room.style.color = 'black';
+            }
         }
 
     } else {
