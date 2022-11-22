@@ -353,17 +353,15 @@ let result = document.getElementById('searchBtn');
 result.addEventListener('click', showPath);
 let path;
 
-
-// let classroom = document.getElementById('searchClass');
-// classroom.addEventListener('click', findclass);
 function findclass(){
+    let list = document.getElementById('myUL');
     let cls=document.getElementById('cls');
     displayclass(cls.value);
     cls.value = '';
+    list.classList.add('none')
 }
 
 function displayclass(value) {
-    console.log(value);
     let a;
     let classContainer = document.getElementById('displayClass');
     classContainer.classList.remove('none');
@@ -382,9 +380,7 @@ function displayclass(value) {
     }
     classElement.className = 'classElement';
     classContainer.append(classElement);
-    }
-
-
+}
 
 function showPath() {
     let start = document.getElementById('start').value;

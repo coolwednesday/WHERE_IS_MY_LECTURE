@@ -39,16 +39,17 @@
 		</div>
 		
 		<div class="cName none">
-			<div class="classFinder"><div>
-				<input id="cls" type="text" id="roomNumber" placeholder="Enter classroom ...">
+			<div class="classFinder">
+					<input id="cls" type="text" id="roomNumber" oninput="handleSearch()" placeholder="Enter classroom...">
+				<div class="search-btn">
+					<button type="button" onclick="findclass()">Search</button>
+					<button type="button" onclick="goBack()">Back</button>
+				</div>
 			</div>
+			<ul id="myUL" class="list none" onload="createList()">
+			</ul>
 			<div id="displayClass" class="displayClass none">
 				Classroom Names : 
-			</div>
-			<div class="search-btn">
-				<button type="button" onclick="findclass()">Search</button>
-				<button type="button" onclick="goBack()">Back</button>
-			</div>
 			</div>
 		</div>
 		

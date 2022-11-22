@@ -187,15 +187,15 @@ body {
 	cursor: pointer;
 }
 
-/* .cName{
-	
-} */
+.cName{
+	position: relative;
+}
 
-.cName .classFinder{
+.classFinder{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	flex-direction: column;
+	/* position: relative; */
 }
 
 .classFinder input{
@@ -229,6 +229,22 @@ body {
 	color: white;
 	font-size: 30px;
 	margin: 10px 20px;
+}
+
+.list{
+	position: absolute;
+	width: 220px;
+	max-height: 300px;
+	background: white;
+	left: 560px;
+	outline: 1px solid black;
+	border: 1px solid black;
+	overflow-y: scroll;
+}
+
+.list li{
+	margin: 5px;
+	cursor: pointer;
 }
 
 .none {

@@ -48,6 +48,43 @@ for(let i=0 ;i<arr.length;i++){
 }
 */
 
+let list = document.getElementById('myUL');
+for (let i = 0; i < arr.length; i++) {
+    let item = document.createElement('li');
+    item.innerText = arr[i];
+    item.id = `class${arr[i]}`;
+    list.append(item);
+}
+
+function handleSearch() {
+    let value = document.getElementById('cls').value;
+    let list = document.getElementById('myUL');
+    let filter, a, txtValue;
+    if (value != '') {
+        list.classList.remove('none');
+    } else {
+        list.classList.add('none');
+    }
+    filter = value.toUpperCase();
+    let li = list.getElementsByTagName('li');
+
+    for (let i = 0; i < li.length; i++){
+        a = li[i].innerText;
+        txtValue = a;
+        if (txtValue?.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+    
+
+}
+
+function searchClass() {
+    
+}
+
 // Managing Pages
 function handlePages(container) {
     let box = document.querySelector(`.${container}`);
