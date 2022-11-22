@@ -334,15 +334,15 @@ graph.addEdge("201", "203", 2);
 
 //Edges between stairs to connect all the floors
 //Connecting 2nd and 1st floor
-graph.addEdge("203", "103", 3);
-graph.addEdge("204", "104", 5);
-graph.addEdge("201", "101", 3);
-graph.addEdge("202", "102", 3);
+graph.addEdge("203", "103", 2);
+graph.addEdge("204", "104", 2);
+graph.addEdge("206", "106", 2);
+graph.addEdge("205", "105", 2);
 //Connecting 1st and Ground floor
-graph.addEdge("107", "28", 3);
-graph.addEdge("108", "33", 3);
-graph.addEdge("109", "43", 3);
-graph.addEdge("110", "20", 5);
+graph.addEdge("107", "28", 2);
+graph.addEdge("108", "33", 2);
+graph.addEdge("109", "43", 2);
+graph.addEdge("110", "20", 2);
 
 
 
