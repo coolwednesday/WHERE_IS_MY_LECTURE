@@ -178,7 +178,7 @@ for (let i = 0; i < ground.length; i++) {
 
 //Adding edges for Ground Floor
 graph.addEdge("20", "21", 1);
-graph.addEdge("21", "22", 2);
+graph.addEdge("21", "22", 3);
 graph.addEdge("22", "24", 1);
 graph.addEdge("24", "25", 3);
 graph.addEdge("25", "26", 2);
