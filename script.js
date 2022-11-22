@@ -356,7 +356,7 @@ let path;
 function findclass(){
     let list = document.getElementById('myUL');
     let cls=document.getElementById('cls');
-    displayclass(cls.value);
+    displayclass(cls.value.toUpperCase());
     cls.value = '';
     list.classList.add('none')
 }

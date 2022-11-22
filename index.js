@@ -33,20 +33,13 @@ for (let i = 0; i < arr.length; i++) {
     option.value = sroomObj[arr[i]];
     start.add(option);
 }
+
 for (let i = 0; i < arr.length; i++) {
     let option = document.createElement('option');
     option.text = arr[i];
     option.value = sroomObj[arr[i]];
     end.add(option);
 }
-/*
-for(let i=0 ;i<arr.length;i++){
-    let option=document.createElement('option');
-    option.text=arr[i];
-    option.value=sroomObj[arr[i]];
-    cls.add(option);
-}
-*/
 
 let list = document.getElementById('myUL');
 for (let i = 0; i < arr.length; i++) {
@@ -77,12 +70,7 @@ function handleSearch() {
             li[i].style.display = "none";
         }
     }
-    
 
-}
-
-function searchClass() {
-    
 }
 
 // Managing Pages
