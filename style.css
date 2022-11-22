@@ -130,7 +130,7 @@ body {
 	justify-content: space-between;
 }
 
-.path {
+.path, .displayClass {
 	text-align: center;
 	margin: 20px;
 	font-size: 48px;
@@ -185,6 +185,50 @@ body {
 
 	font-size: 18px;
 	cursor: pointer;
+}
+
+/* .cName{
+	
+} */
+
+.cName .classFinder{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.classFinder input{
+	margin: 20px;
+	padding: 10px 20px;
+	background: transparent;
+	outline: none;
+	border: none;
+	border-bottom: 2px solid white;
+	font-size: 18px;
+	color: white;
+}
+
+/* .classFinder button{
+	padding: 14px 30px;
+	background: #050900;
+	font-size: 16px;
+	color: white;
+	border-radius: 6px;
+	cursor: pointer;
+	outline: none;
+	border: 2px solid white;
+} */
+
+.displayClass{
+	margin: 30px;
+	font-size: 30px;
+}
+
+.displayClass .classElement{
+	color: white;
+	font-size: 30px;
+	margin: 10px 20px;
 }
 
 .none {

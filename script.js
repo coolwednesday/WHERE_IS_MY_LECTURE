@@ -352,17 +352,21 @@ graph.addEdge("110", "20", 2);
 let result = document.getElementById('searchBtn');
 result.addEventListener('click', showPath);
 let path;
-/*
-let classroom = document.getElementById('searchClass');
-classroom.addEventListener('click', findclass);
+
+
+// let classroom = document.getElementById('searchClass');
+// classroom.addEventListener('click', findclass);
 function findclass(){
-    let cls=document.getElementById('cls').value;
-    displayclass(cls);
+    let cls=document.getElementById('cls');
+    displayclass(cls.value);
+    cls.value = '';
 }
 
-function displayclass(value){
+function displayclass(value) {
+    console.log(value);
     let a;
-    let classContainer = document.getElementById('cls');
+    let classContainer = document.getElementById('displayClass');
+    classContainer.classList.remove('none');
     let classElement = document.createElement('div');
     for (let i = 0; i < array.length; i++) {
         if (array[i] == value) {
@@ -370,12 +374,15 @@ function displayclass(value){
             break;
         }
     }
-        console.log(a);
+    console.log(a);
+    if (a == undefined) {
+        classElement.innerText = 'Invalid Classroom';
+    } else {
         classElement.innerText = a;
-        classElement.className = 'classElement';
-        classContainer?.append(classElement);
     }
-*/
+    classElement.className = 'classElement';
+    classContainer.append(classElement);
+    }
 
 
 
