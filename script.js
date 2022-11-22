@@ -238,25 +238,27 @@ graph.addEdge("117", "127", 1);
 graph.addEdge("127", "126", 2);
 graph.addEdge("126", "118", 1);
 graph.addEdge("117", "118", 2);
-graph.addEdge("125", "118", 1);
+graph.addEdge("125", "118", 2);
 graph.addEdge("125", "121", 1);
 graph.addEdge("121", "123", 1);
 graph.addEdge("124", "123", 3);
-graph.addEdge("124", "131", 7);
+graph.addEdge("124", "131", 6);
 graph.addEdge("111", "103", 1);
-graph.addEdge("107", "103", 4);
-graph.addEdge("104", "103", 4);
+graph.addEdge("107", "103", 2);
+graph.addEdge("104", "111", 3);
+graph.addEdge("104","128",2);
 graph.addEdge("101", "107", 2);
 graph.addEdge("103", "112", 2);
 graph.addEdge("101", "112", 2);
 graph.addEdge("107", "112", 3);
 graph.addEdge("108", "104", 2);
 graph.addEdge("130", "131", 2);
+//graph.addEdge("130","123",6);
 graph.addEdge("109", "131", 2);
 graph.addEdge("105", "109", 2);
-graph.addEdge("105", "148", 4);
-graph.addEdge("105", "153", 4);
-graph.addEdge("130", "132", 1);
+graph.addEdge("105", "148", 5);
+graph.addEdge("105", "153", 5);
+graph.addEdge("130", "132", 2);
 graph.addEdge("133", "132", 1);
 graph.addEdge("133", "134", 1);
 graph.addEdge("134", "158", 1);
@@ -265,21 +267,21 @@ graph.addEdge("134", "137", 3);
 graph.addEdge("137", "157", 1);
 graph.addEdge("137", "138", 1);
 graph.addEdge("138", "140", 1);
-graph.addEdge("140", "142", 1);
-graph.addEdge("142", "148", 4);
-graph.addEdge("142", "153", 4);
+graph.addEdge("140", "142", 2);
+graph.addEdge("142", "148", 3);
+graph.addEdge("142", "153", 3);
 graph.addEdge("148", "153", 1);
-graph.addEdge("148", "151", 1);
+graph.addEdge("153", "151", 2);
 graph.addEdge("154", "151", 1);
 graph.addEdge("154", "150", 1);
-graph.addEdge("153", "150", 1);
+graph.addEdge("148", "150", 1);
 graph.addEdge("102", "148", 3);
 graph.addEdge("102", "153", 3);
 graph.addEdge("102", "106", 1);
 graph.addEdge("102", "110", 2);
-graph.addEdge("105", "142", 4);
+graph.addEdge("105", "142", 2);
 graph.addEdge("128", "108", 1);
-graph.addEdge("124", "128", 1);
+graph.addEdge("124", "128", 2);
 
 //Adding nodes for Second Floor
 let second = [201, 202, 203, 204, 205, 206, 207, 208, 209, 217, 219, 224, 225,
@@ -333,15 +335,16 @@ graph.addEdge("201", "203", 2);
 
 //edges betwwen stairs to connect all the floors
 //Connecting 2nd and 1st floor
-graph.addEdge("203", "103", 3);
-graph.addEdge("204", "104", 5);
-graph.addEdge("201", "101", 3);
-graph.addEdge("202", "102", 3);
+graph.addEdge("203", "103", 2);
+graph.addEdge("204", "104", 2);
+graph.addEdge("205", "105", 2);
+graph.addEdge("206", "106", 2);
+
 //Connecting 1st and Ground floor
-graph.addEdge("105", "28", 3);
-graph.addEdge("108", "33", 3);
-graph.addEdge("107", "43", 3);
-graph.addEdge("108", "20", 5);
+graph.addEdge("107", "28", 2);
+graph.addEdge("108", "33", 2);
+graph.addEdge("109", "43", 2);
+graph.addEdge("110", "20", 2);
 
 // console.log(graph.Dijkstra("117", "226"));
 
