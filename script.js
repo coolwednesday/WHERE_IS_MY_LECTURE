@@ -200,9 +200,9 @@ graph.addEdge("33", "34", 1);
 graph.addEdge("33", "39", 4);
 graph.addEdge("40", "43", 2);
 graph.addEdge("42", "43", 2);
-graph.addEdge("42","47",2);
-graph.addEdge("47","23",1);
-graph.addEdge("47","20",1);
+graph.addEdge("42", "47", 2);
+graph.addEdge("47", "23", 1);
+graph.addEdge("47", "20", 1);
 //graph.addEdge("23", "42", 3);
 //graph.addEdge("20", "23", 2);
 graph.addEdge("29", "32", 1);
@@ -332,24 +332,50 @@ graph.addEdge("202", "206", 2);
 graph.addEdge("217", "201", 4);
 graph.addEdge("201", "203", 2);
 
-//edges betwwen stairs to connect all the floors
+//Edges between stairs to connect all the floors
 //Connecting 2nd and 1st floor
 graph.addEdge("203", "103", 3);
 graph.addEdge("204", "104", 5);
 graph.addEdge("201", "101", 3);
 graph.addEdge("202", "102", 3);
 //Connecting 1st and Ground floor
-graph.addEdge("105", "28", 3);
+graph.addEdge("107", "28", 3);
 graph.addEdge("108", "33", 3);
-graph.addEdge("107", "43", 3);
-graph.addEdge("108", "20", 5);
+graph.addEdge("109", "43", 3);
+graph.addEdge("110", "20", 5);
 
-// console.log(graph.Dijkstra("117", "226"));
+
 
 
 let result = document.getElementById('searchBtn');
 result.addEventListener('click', showPath);
 let path;
+/*
+let classroom = document.getElementById('searchClass');
+classroom.addEventListener('click', findclass);
+function findclass(){
+    let cls=document.getElementById('cls').value;
+    displayclass(cls);
+}
+
+function displayclass(value){
+    let a;
+    let classContainer = document.getElementById('cls');
+    let classElement = document.createElement('div');
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] == value) {
+            a = getobj(roomObj[array[i]]);
+            break;
+        }
+    }
+        console.log(a);
+        classElement.innerText = a;
+        classElement.className = 'classElement';
+        classContainer?.append(classElement);
+    }
+*/
+
+
 
 function showPath() {
     let start = document.getElementById('start').value;
@@ -383,16 +409,16 @@ function getobj(p) {
             }
         }
     }
-        console.log(a);
-        return a;
-    }
-    
+    console.log(a);
+    return a;
+}
+
 function displayPath(path) {
     let pathContainer = document.getElementById('path');
     for (let i = 0; i < path.length; i++) {
         let pathElement = document.createElement('div');
         let a = getobj(path[i]);
-        pathElement.innerText = (i != path.length - 1) ? `${a}    →` : a ;
+        pathElement.innerText = (i != path.length - 1) ? `${a}    →` : a;
         pathElement.className = 'pathElement';
         pathContainer?.append(pathElement);
     }
@@ -407,17 +433,17 @@ function showOnMap(type = 'close') {
     let mapg = document.getElementById('groundFloor');
     let mapf = document.getElementById('firstFloor');
     let maps = document.getElementById('SecondFloor');
-    
+
     if (type == 'open') {
-        
+
         mapg.classList.remove('none');
         mapf.classList.remove('none');
         maps.classList.remove('none');
-        
+
         for (let i = 0; i < path.length; i++) {
             let room = document.getElementById(`${groundObj[path[i]]}`);
             room.style.background = 'greenyellow';
-            room.style.color= 'black';
+            room.style.color = 'black';
         }
 
     } else {

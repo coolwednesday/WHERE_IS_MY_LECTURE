@@ -39,6 +39,14 @@ for (let i = 0; i < arr.length; i++) {
     option.value = sroomObj[arr[i]];
     end.add(option);
 }
+/*
+for(let i=0 ;i<arr.length;i++){
+    let option=document.createElement('option');
+    option.text=arr[i];
+    option.value=sroomObj[arr[i]];
+    cls.add(option);
+}
+*/
 
 
 
