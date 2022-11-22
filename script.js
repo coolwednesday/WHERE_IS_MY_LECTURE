@@ -330,13 +330,13 @@ graph.addEdge("201", "203", 2);
 //Connecting 2nd and 1st floor
 graph.addEdge("203", "103", 3);
 graph.addEdge("204", "104", 5);
-graph.addEdge("201", "101", 3);
-graph.addEdge("202", "102", 3);
+graph.addEdge("205", "105", 3);
+graph.addEdge("206", "106", 3);
 //Connecting 1st and Ground floor
-graph.addEdge("105", "28", 3);
-graph.addEdge("106", "33", 3);
-graph.addEdge("107", "43", 3);
-graph.addEdge("108", "20", 5);
+graph.addEdge("107", "28", 3);
+graph.addEdge("108", "33", 3);
+graph.addEdge("109", "43", 3);
+graph.addEdge("110", "20", 5);
 
 // console.log(graph.Dijkstra("117", "226"));
 
@@ -377,16 +377,16 @@ function getobj(p) {
             }
         }
     }
-        console.log(a);
-        return a;
-    }
-    
+    console.log(a);
+    return a;
+}
+
 function displayPath(path) {
     let pathContainer = document.getElementById('path');
     for (let i = 0; i < path.length; i++) {
         let pathElement = document.createElement('div');
         let a = getobj(path[i]);
-        pathElement.innerText = (i != path.length - 1) ? `${a}    →` : a ;
+        pathElement.innerText = (i != path.length - 1) ? `${a}    →` : a;
         pathElement.className = 'pathElement';
         pathContainer?.append(pathElement);
     }
@@ -401,17 +401,17 @@ function showOnMap(type = 'close') {
     let mapg = document.getElementById('groundFloor');
     let mapf = document.getElementById('firstFloor');
     let maps = document.getElementById('SecondFloor');
-    
+
     if (type == 'open') {
-        
+
         mapg.classList.remove('none');
         mapf.classList.remove('none');
         maps.classList.remove('none');
-        
+
         for (let i = 0; i < path.length; i++) {
             let room = document.getElementById(`${groundObj[path[i]]}`);
             room.style.background = 'greenyellow';
-            room.style.color= 'black';
+            room.style.color = 'black';
         }
 
     } else {
